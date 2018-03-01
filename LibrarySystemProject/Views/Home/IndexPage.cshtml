@@ -1,0 +1,155 @@
+﻿@*@{
+        ViewBag.Title = "IndexPage";
+
+    }
+
+    <h2>IndexPage</h2>*@
+
+
+
+@model LibrarySystemProject.Models.BookViewModel.BookListViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <p></p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://www.sharefaith.com/blog/wp-content/uploads/2016/02/books-blog.jpg" alt="Los Angeles" style="height:40em; width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="http://timedotcom.files.wordpress.com/2014/12/ya.jpg" alt="Chicago"  style="height:40em; width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="http://www.getabstract.com/www/images/upload/marketing/en/top10classic-business-books.jpg" alt="New york"  style="height:40em; width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="col-sm-12">
+        <div class="col-lg-6" style="padding:1em; padding-left:5em;">
+            <img src="https://media.istockphoto.com/photos/open-book-picture-id495477978?k=6&m=495477978&s=612x612&w=0&h=e673w4tPLT2ZtJ62ytZcF_DBPxMBP57duHK0AFr6lQo=" class="img-circle" alt="Cinque Terre" width="304" height="236" style="border-color:black;  border: 10px solid transparent;">
+        </div>
+        <div class="col-md-6" style="padding-top:8em;">
+            <cite>
+                <i>
+                    <b>
+                        "The original theme of 'Beauty and the Beast' is don't judge a book by it's cover. Love what's inside."
+                    </b>
+                </i>
+                <b style="padding-left:10em; padding-top:1em;">
+                    - Jay Ryan
+                </b>
+            </cite>
+        </div>
+    </div>
+
+
+    <div>
+        <h3 style="text-align:center; padding:0.5em;">Top 2018 Books</h3>
+        <hr />
+    </div>
+
+    <div class="row text-center" style="padding-bottom:2em;">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1493664402/pro_pbid_3918880.jpg" alt="Paris" width="400" height="250">
+                <p><strong>White Chrysanthemum</strong></p>
+                <p> by Mary Lynn Bracht</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1519094524i/25090240.jpg" alt="New York" width="400" height="250">
+                <p><strong>Sisters Like Us </strong></p>
+                <p>by Susan Mallery</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1503364196/pro_pbid_3918888.jpg" alt="San Francisco" width="400" height="250">
+                <p><strong>As You Wish</strong></p>
+                <p>by Jude Deveraux</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3 style="text-align:center; padding-bottom:1em;">Where we are</h3>
+    </div>
+
+    <div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1RIlYteTPmiDC9JWUFWVZ2AEueMU&hl=en" width="1138" height="480"></iframe>
+    </div>
+
+
+    <!-- Container (Contact Section) -->
+    <div class="container">
+        <h3 class="text-center" style="padding-bottom:1em;">Contact</h3>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <p><span class="glyphicon glyphicon-map-marker"></span>Plovdiv, Bulgaria</p>
+                <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit" style=" padding: 10px 20px;  background-color: #333; color: #f1f1f1; border-radius: 0; transition: .2s;">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
