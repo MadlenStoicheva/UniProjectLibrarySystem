@@ -1,6 +1,7 @@
 ﻿using LibrarySystem.Entity;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -14,6 +15,9 @@ namespace LibrarySystemProject.Models.TakeABookViewModel
         public int UserId { get; set; }
         public DateTime dateTaken { get; set; }
         public DateTime dateForReturn { get; set; }
+
+        [Required(ErrorMessage = "Please input a release date! It is required!")]
+        [DataType(DataType.Date)]
         public DateTime dateReturn { get; set; }
 
         public List<SelectListItem> Users { get; set; }

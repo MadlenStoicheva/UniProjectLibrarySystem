@@ -11,6 +11,12 @@
 
     <div class="form-horizontal">
         <div class="form-group">
+            @Html.LabelFor(model => model.imgURL, "ImgURL", new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
+
+            @Html.TextBoxFor(model => model.imgURL, new { @class = "form-control col-md-offset-5" })
+
+        </div>
+        <div class="form-group">
             @Html.LabelFor(model => model.numberISBN, "Number ISBN" , new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
           
             @Html.TextBoxFor(model => model.numberISBN, new { @class = "form-control col-md-offset-5" })
@@ -52,10 +58,10 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.availability, "Availability", new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
-
-            @Html.TextBoxFor(model => model.availability, new { @class = "form-control col-md-offset-5" })
+            <input type="number"  name="availability" value="50">
+            @*@Html.TextBoxFor(model => model.availability, new { @class = "form-control col-md-offset-5" })*@
             @Html.ValidationMessageFor(model => model.availability)
-            
+
         </div>
         <div class="form-group" style="margin-top:15px;">
             <div class="col-md-offset-5 col-md-10">

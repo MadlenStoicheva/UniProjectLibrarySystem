@@ -68,6 +68,7 @@ namespace LibrarySystemProject.Controllers
             book.publishingHouse = model.publishingHouse;
             book.releaseDate = model.releaseDate;
             book.availability = model.availability;
+            book.imgURL = model.imgURL;
 
             var repository = new BookRepository();
             repository.Insert(book);
@@ -87,6 +88,7 @@ namespace LibrarySystemProject.Controllers
             {
                 Book book = repository.GetById(id.Value);
                 model.Id = book.Id;
+                model.imgURL = book.imgURL;
                 model.numberISBN = book.numberISBN;
                 model.title = book.title;
                 model.author= book.author;
@@ -112,6 +114,7 @@ namespace LibrarySystemProject.Controllers
 
             Book book = new Book();
             book.Id = model.Id;
+            book.imgURL = model.imgURL;
             book.numberISBN = model.numberISBN;
             book.title = model.title;
             book.author = model.author;

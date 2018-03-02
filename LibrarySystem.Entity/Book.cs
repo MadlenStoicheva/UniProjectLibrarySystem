@@ -8,6 +8,7 @@ namespace LibrarySystem.Entity
 {
     public class Book : BaseEntity
     {
+        public string imgURL { get; set; }
         public string numberISBN { get; set; }
         public string title { get; set; }
         public string author { get; set; }

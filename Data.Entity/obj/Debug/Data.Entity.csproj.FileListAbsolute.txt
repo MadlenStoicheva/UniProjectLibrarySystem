@@ -143,3 +143,20 @@ D:\Нова папка (2)\gotov variant c# project\mdm\Data.Entity\obj\Debug\Da
 D:\Нова папка (2)\gotov variant c# project\mdm\Data.Entity\obj\Debug\Data.Entity.csproj.CoreCompileInputs.cache
 D:\Нова папка (2)\gotov variant c# project\mdm\Data.Entity\obj\Debug\Data.Entity.dll
 D:\Нова папка (2)\gotov variant c# project\mdm\Data.Entity\obj\Debug\Data.Entity.pdb
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\Data.Entity.dll.config
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\Data.Entity.dll
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\Data.Entity.pdb
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\EntityFramework.dll
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\EntityFramework.SqlServer.dll
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\LibrarySystem.Entity.dll
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\LibrarySystem.Entity.pdb
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\LibrarySystem.Entity.dll.config
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\EntityFramework.xml
+D:\UniProjectLibrarySystem\Data.Entity\bin\Debug\EntityFramework.SqlServer.xml
+D:\UniProjectLibrarySystem\Data.Entity\obj\Debug\Data.Entity.csprojResolveAssemblyReference.cache
+D:\UniProjectLibrarySystem\Data.Entity\obj\Debug\Data.Entity.Migrations.automatichna.resources
+D:\UniProjectLibrarySystem\Data.Entity\obj\Debug\Data.Entity.csproj.GenerateResource.Cache
+D:\UniProjectLibrarySystem\Data.Entity\obj\Debug\Data.Entity.csproj.CoreCompileInputs.cache
+D:\UniProjectLibrarySystem\Data.Entity\obj\Debug\Data.Entity.dll
+D:\UniProjectLibrarySystem\Data.Entity\obj\Debug\Data.Entity.pdb
+D:\UniProjectLibrarySystem\Data.Entity\obj\Debug\Data.Entity.Migrations.addimage.resources

@@ -11,45 +11,54 @@
 {
     <div class="form-horizontal">
         <div class="form-group">
-            @Html.LabelFor(model => model.numberISBN, "Number ISBN" , new { @class = "control-label col-md-5", @style = "color: #333; font-size:15px; " })
-     
+            @Html.LabelFor(model => model.imgURL, "ImgURL", new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
+
+            @Html.TextBoxFor(model => model.imgURL, new { @class = "form-control col-md-offset-5" })
+
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.numberISBN, "Number ISBN", new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px; " })
+
             @Html.EditorFor(model => model.numberISBN, new { @class = "form-control col-md-offset-5" })
             @Html.ValidationMessageFor(model => model.numberISBN)
-      
+
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.title, "Title" , new { @class = "control-label col-md-5", @style = "color: #333; font-size:15px;" })
-      
-            @Html.EditorFor(model => model.title, new { @class = "form-control col-md-offset-6" })
+            @Html.LabelFor(model => model.title, "Title", new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
+
+            @Html.EditorFor(model => model.title, new { @class = "form-control col-md-offset-5" })
             @Html.ValidationMessageFor(model => model.title)
-       
+
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.author, "Author", new { @class = "control-label col-md-5", @style = "color: #333; font-size:15px;" })
-          
-            @Html.EditorFor(model => model.author, new { @class = "form-control col-md-offset-7" })
+            @Html.LabelFor(model => model.author, "Author", new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
+
+            @Html.EditorFor(model => model.author, new { @class = "form-control col-md-offset-5" })
             @Html.ValidationMessageFor(model => model.author)
-           
+
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.publishingHouse, "Publishing House", new { @class = "control-label col-md-5", @style = "color: #333; font-size:15px;" })
-      
-            @Html.EditorFor(model => model.publishingHouse, new { @class = "form-control col-md-offset-6" })
+            @Html.LabelFor(model => model.publishingHouse, "Publishing House", new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
+
+            @Html.EditorFor(model => model.publishingHouse, new { @class = "form-control col-md-offset-5" })
             @Html.ValidationMessageFor(model => model.publishingHouse)
 
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.releaseDate, "Release Date", new { @class = "control-label col-md-5", @style = "color: #333; font-size:15px;" })
-            @Html.EditorFor(model => model.releaseDate, new { @class = "form-control col-md-offset-6" })
+            @Html.LabelFor(model => model.releaseDate, "Release Date", htmlAttributes: new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
+
+            @Html.EditorFor(model => model.releaseDate, new { htmlAttributes = new { @class = "datepicker" } })
             @Html.ValidationMessageFor(model => model.releaseDate)
+
 
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.availability, "Availability", new { @class = "control-label col-md-5", @style = "color: #333; font-size:15px;" })
-        
-            @Html.EditorFor(model => model.availability, new { @class = "form-control col-md-offset-6"})
+            @Html.LabelFor(model => model.availability, "Availability", new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
+
+            @Html.EditorFor(model => model.availability, new { @class = "form-control col-md-offset-5" })
             @Html.ValidationMessageFor(model => model.availability)
-           
+
         </div>
         <div class="form-group">
             <div class="col-md-offset-5 col-md-10">
@@ -63,3 +72,35 @@
 }
 
 
+
+
+<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    @section scripts{
+
+        <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+
+        <script>
+
+            $(function () {
+                $(".datepicker").datepicker({
+                    dateFormat: "yy/mm/dd",
+                    changeMonth: true,
+                    changeYear: true,
+                    //yearRange : "-10:+10"
+                    minDate: new Date(2017, 0, 1),
+                    maxDate: new Date(2018, 0, 1),
+                    showOn: "both",
+                    buttonText: "<i class='fa fa-calendar'></i>"
+
+                    //onSelect: function (dateText, inst) {
+                    //    var date = $(this).val();
+                    //    alert(date);
+                    //    console.log(date);
+                    //}
+                });
+        </script>
+
+    }

@@ -9,6 +9,7 @@ namespace LibrarySystemProject.Models.BookViewModel
 {
     public class BookEditViewModel:BaseEntity
     {
+        public string imgURL { get; set; }
         [System.ComponentModel.DataAnnotations.Required]
         [RegularExpression(@"^(\d{4})$", ErrorMessage = "Number ISBN must be 4 digits")]
         public string numberISBN { get; set; }
@@ -28,6 +29,8 @@ namespace LibrarySystemProject.Models.BookViewModel
         [RegularExpression(@"^([A-z -]+)$", ErrorMessage = "Publishing House can consist of letters, spaces and dashes only!")]
         public string publishingHouse { get; set; }
 
+        [Required(ErrorMessage = "Please input a release date! It is required!")]
+        [DataType(DataType.Date)]
         public DateTime releaseDate { get; set; }
 
         [Required]
