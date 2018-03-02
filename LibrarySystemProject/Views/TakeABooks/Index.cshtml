@@ -17,6 +17,7 @@
         <table class="table">
             <thead>
                 <tr class="btn-success" style="background-color:#333; border-color:#333;">
+                    <th style="text-align:center;">Image</th>
                     <th style="text-align:center;">Book</th>
                     <th style="text-align:center;">User</th>
                     <th style="text-align:center;">Date Taken</th>
@@ -33,6 +34,7 @@
                 @foreach (var takeABook in Model.TakeABooks)
                 {
                     <tr class="bg-info text-white" style="text-align:center;">
+                        <td><img src="@takeABook.book.imgURL" alt="image" style="width:60px; height:80px;" /></td>
                         <td>@takeABook.book.title  (@takeABook.book.author)</td>
                         <td>@takeABook.user.firstName  @takeABook.user.lastName</td>
                         <td>@takeABook.dateTaken</td>
