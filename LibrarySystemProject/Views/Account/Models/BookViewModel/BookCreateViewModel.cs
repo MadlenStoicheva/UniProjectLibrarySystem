@@ -8,7 +8,11 @@ namespace LibrarySystemProject.Models.BookViewModel
 {
     public class BookCreateViewModel
     {
+        [Required(ErrorMessage = "Please input URL! It is required!")]
+        //[System.ComponentModel.DataAnnotations.Required(ErrorMessage = "Please input a title! It is required!")]
+        // [RegularExpression(@"^(http|https|ftp|)\://|[a-zA-Z0-9\-\.]+\.[a-zA-Z](:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;%\$#\=~])*[^\.\,\)\(\s]$", ErrorMessage = "The URL address is not valid")]
         public string imgURL { get; set; }
+
         [System.ComponentModel.DataAnnotations.Required]
         [RegularExpression(@"^(\d{4})$", ErrorMessage = "Number ISBN must be 4 digits")]
         public string numberISBN { get; set; }

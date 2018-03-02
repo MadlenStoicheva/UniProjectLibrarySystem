@@ -14,6 +14,7 @@
             @Html.LabelFor(model => model.imgURL, "ImgURL", new { @class = "control-label col-md-5", @style = "color: #333; font-size:22px;" })
 
             @Html.TextBoxFor(model => model.imgURL, new { @class = "form-control col-md-offset-5" })
+            @Html.ValidationMessageFor(model => model.imgURL)
 
         </div>
 
@@ -91,9 +92,9 @@
                     changeMonth: true,
                     changeYear: true,
                     //yearRange : "-10:+10"
-                    minDate: new Date(2017, 0, 1),
-                    maxDate: new Date(2018, 0, 1),
-                    showOn: "both",
+                    //minDate: new Date(1999, 0, 1),
+                    //maxDate: new Date(2080, 0, 1),
+                    //showOn: "both",
                     buttonText: "<i class='fa fa-calendar'></i>"
 
                     //onSelect: function (dateText, inst) {

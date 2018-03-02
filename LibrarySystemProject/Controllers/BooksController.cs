@@ -125,7 +125,15 @@ namespace LibrarySystemProject.Controllers
             book.title = model.title;
             book.author = model.author;
             book.publishingHouse = model.publishingHouse;
-            book.releaseDate = model.releaseDate;
+            if (book.releaseDate != model.releaseDate)
+            {
+                book.releaseDate = model.releaseDate;
+            }
+            else
+            {
+                book.releaseDate = book.releaseDate;
+            }
+            
             book.availability = model.availability;
 
 
