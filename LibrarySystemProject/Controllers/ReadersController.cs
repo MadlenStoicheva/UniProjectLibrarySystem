@@ -17,6 +17,7 @@ namespace LibrarySystemProject.Controllers
     [AuthenticationFilter(RequireAdminRole = true)]
     public class ReadersController : Controller
     {
+        [AuthenticationFilter(RequireAdminRole = true)]
         public ActionResult Index()
         {
             ReaderRepository repository = new ReaderRepository();
@@ -28,12 +29,13 @@ namespace LibrarySystemProject.Controllers
             return View(model);
         }
 
+        [AuthenticationFilter(RequireAdminRole = true)]
         public ActionResult Create()
         {
             return View();
         }
 
-    
+        [AuthenticationFilter(RequireAdminRole = true)]
         [HttpPost]
         public ActionResult Create(ReaderCreateViewModel model)
         {
@@ -54,6 +56,7 @@ namespace LibrarySystemProject.Controllers
             return RedirectToAction("Index");
         }
 
+        [AuthenticationFilter(RequireAdminRole = true)]
         [HttpGet]
         public ActionResult Edit(int? id)
         {
@@ -76,6 +79,7 @@ namespace LibrarySystemProject.Controllers
             return View(model);
         }
 
+        [AuthenticationFilter(RequireAdminRole = true)]
         [HttpPost]
         public ActionResult Edit(ReaderEditViewModel model)
         {

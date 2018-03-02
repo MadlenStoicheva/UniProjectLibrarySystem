@@ -23,16 +23,20 @@ namespace LibrarySystemProject.Controllers
 
             return View(model);
         }
+
+        [AuthenticationFilter(RequireAdminRole = true)]
         public ActionResult Create()
         {
             return View();
         }
 
+        [AuthenticationFilter(RequireAdminRole = true)]
         public ActionResult Reserve()
         {
             return View();
         }
 
+        [AuthenticationFilter(RequireAdminRole = true)]
         [HttpGet]
         public ActionResult Reserve(int id)
         {
@@ -52,7 +56,7 @@ namespace LibrarySystemProject.Controllers
             return View(model);
         }
 
-
+        [AuthenticationFilter(RequireAdminRole = true)]
         [HttpPost]
         public ActionResult Create(BookCreateViewModel model)
         {
@@ -76,6 +80,7 @@ namespace LibrarySystemProject.Controllers
             return RedirectToAction("Index");
         }
 
+        [AuthenticationFilter(RequireAdminRole = true)]
         [HttpGet]
         public ActionResult Edit(int? id)
         {
@@ -101,6 +106,7 @@ namespace LibrarySystemProject.Controllers
             return View(model);
         }
 
+        [AuthenticationFilter(RequireAdminRole = true)]
         [HttpPost]
         public ActionResult Edit(BookEditViewModel model)
         {

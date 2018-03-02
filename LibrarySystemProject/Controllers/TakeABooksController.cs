@@ -120,6 +120,7 @@ namespace LibrarySystemProject.Controllers
             return RedirectToAction("Index");
         }
 
+        [AuthenticationFilter(RequireAdminRole = true)]
         [HttpGet]
         public ActionResult Edit(int? id)
         {
@@ -144,7 +145,7 @@ namespace LibrarySystemProject.Controllers
             return View(model);
         }
 
-
+        [AuthenticationFilter(RequireAdminRole = true)]
         [HttpPost]
         public ActionResult Edit(TakeABookEditViewModel model)
         {
