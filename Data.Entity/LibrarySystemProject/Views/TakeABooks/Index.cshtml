@@ -1,0 +1,68 @@
+﻿@model LibrarySystemProject.Models.TakeABookViewModel.TakeABookListViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1 style="text-align:center; margin-top:25px; color:#333; ">Taken Books</h1>
+
+@*@{
+    if (LibrarySystemProject.LoginFilter.LoginUser.IsAdmin())
+    {*@
+
+        <button class="btn-success" style="border-radius:25px; background-color:#333; border-color:#333; height:3em; width:7em; margin-bottom:20px; ">
+            @Html.ActionLink("Get book", "Create", "TakeABooks", new { @style = "color:white; text-decoration:none; font-weight:bold;" })
+        </button>
+
+        @*} }*@
+        <table class="table">
+            <thead>
+                <tr class="btn-success" style="background-color:#333; border-color:#333;">
+                    <th style="text-align:center;">Image</th>
+                    <th style="text-align:center;">Book</th>
+                    <th style="text-align:center;">User</th>
+                    <th style="text-align:center;">Date Taken</th>
+                    <th style="text-align:center;">Date For Return</th>
+                         @*@{
+                             if (LibrarySystemProject.LoginFilter.LoginUser.IsAdmin())
+                             {
+                    <th style="text-align:center;">Date Return</th>
+                                 } }*@
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var takeABook in Model.TakeABooks)
+                {
+                    <tr class="bg-info text-white" style="text-align:center;">
+                        <td><img src="@takeABook.book.imgURL" alt="image" style="width:60px; height:80px;" /></td>
+                        <td>@takeABook.book.title  (@takeABook.book.author)</td>
+                        <td>@takeABook.user.firstName  @takeABook.user.lastName</td>
+                        <td>@takeABook.dateTaken</td>
+                        <td>@takeABook.dateForReturn</td>
+                             @*@{
+                                 if (LibrarySystemProject.LoginFilter.LoginUser.IsAdmin())
+                                 {
+                        <td>@takeABook.dateReturn</td>
+                                 }}*@
+                        <td>
+                           
+
+                            @{
+                                if (LibrarySystemProject.LoginFilter.LoginUser.IsAdmin())
+                                {
+
+                                     @*<button class="btn-default" style="border-radius:15px; height:2.5em; width:5em;">
+                                        @Html.ActionLink("Edit", "Edit", "TakeABooks", new { id = takeABook.Id }, null)
+                                    </button>*@
+
+                                    <button class="btn-default" style="border-radius:15px; height:2.5em; width:5em;">
+                                        @Html.ActionLink("Delete", "Delete", "TakeABooks", new { id = takeABook.Id }, null)
+                                    </button>
+                                }
+                            }
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
