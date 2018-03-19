@@ -8,3 +8,13 @@ c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.AuthenticationService\o
 c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.AuthenticationService\obj\Debug\LibrarySystem.AuthenticationService.csproj.CoreCompileInputs.cache
 c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.AuthenticationService\obj\Debug\LibrarySystem.AuthenticationService.dll
 c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.AuthenticationService\obj\Debug\LibrarySystem.AuthenticationService.pdb
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\bin\Debug\LibrarySystem.AuthenticationService.dll
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\bin\Debug\LibrarySystem.AuthenticationService.pdb
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\bin\Debug\LibrarySystem.BaseService.Domain.dll
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\bin\Debug\LibrarySystem.RelationalServices.Domain.dll
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\bin\Debug\LibrarySystem.RelationalServices.Domain.pdb
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\obj\Debug\LibrarySystem.AuthenticationService.csprojResolveAssemblyReference.cache
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\obj\Debug\LibrarySystem.AuthenticationService.csproj.CoreCompileInputs.cache
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\obj\Debug\LibrarySystem.AuthenticationService.dll
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.AuthenticationService\obj\Debug\LibrarySystem.AuthenticationService.pdb
