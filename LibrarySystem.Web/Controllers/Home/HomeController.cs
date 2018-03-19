@@ -15,10 +15,7 @@ namespace LibrarySystemProject.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
-        {
-            return RedirectToAction("IndexPage", "Home");
-        }
+      
 
         [HttpGet]
         public ActionResult IndexPage()
