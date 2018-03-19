@@ -36,7 +36,7 @@
                         if (LibrarySystem.AuthenticationService.AuthenticateLoginUserService.IsNotLogedUser() == false)
                         {
                     <li style="left:1em;">@Html.ActionLink("Books", "Index", "Books", null, new { @style = "color:white;" })</li>
-                    <li style="left:1em;">@Html.ActionLink("Take a book", "Index", "takeABooks", null, new { @style = "color:white;" })</li>  
+                    <li style="left:1em;">@Html.ActionLink("Take a book", "Index", "TakeABooks", null, new { @style = "color:white;" })</li>  
 
                             if (LibrarySystem.AuthenticationService.AuthenticateLoginUserService.IsAdmin()==true)
                             {
