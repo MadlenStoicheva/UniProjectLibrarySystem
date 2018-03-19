@@ -76,7 +76,7 @@ namespace LibrarySystemProject.Controllers
             var repository = new BookRepository();
             repository.Insert(book);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Home");
         }
 
         [LibrarySystem.Web.ActionFilters.AuthenticationFilter(RequireAdminRole = true)]
@@ -138,7 +138,7 @@ namespace LibrarySystemProject.Controllers
 
             repository.Save(book);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Books");
         }
 
         [LibrarySystem.Web.ActionFilters.AuthenticationFilter(RequireAdminRole = true)]
@@ -172,7 +172,7 @@ namespace LibrarySystemProject.Controllers
             }
 
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Books");
         }
 
     }
