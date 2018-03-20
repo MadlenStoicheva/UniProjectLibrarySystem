@@ -26,7 +26,8 @@ namespace LibrarySystem.Web.Authentication
             }
             else
             {
-                HttpContext.Current.Response.Redirect("/Home/IndexPage");
+                //HttpContext.Current.Response.Redirect("/Home/IndexPage");
+
                 return false;
             }
         }
