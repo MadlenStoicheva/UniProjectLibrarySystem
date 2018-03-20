@@ -77,7 +77,7 @@ namespace LibrarySystemProject.Controllers
             var repository = new BookRepository();
             repository.Insert(book);
 
-            return RedirectToAction("IndexPage","Home");
+            return RedirectToAction("Index", "Books");
         }
 
         [LibrarySystem.Web.ActionFilters.AuthenticationFilter(RequireAdminRole = true)]
