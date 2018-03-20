@@ -33,12 +33,12 @@
                     <li style="left:1em;">@Html.ActionLink("Home", "IndexPage", "Home", null, new { @style = "color:white;" })</li>
                 
                     @{
-                        if (LibrarySystem.AuthenticationService.AuthenticateLoginUserService.IsNotLogedUser() == false)
+                        if (LibrarySystem.Web.Authentication.UserLogin.IsNotLogedUser() == false)
                         {
                     <li style="left:1em;">@Html.ActionLink("Books", "Index", "Books", null, new { @style = "color:white;" })</li>
                     <li style="left:1em;">@Html.ActionLink("Take a book", "Index", "TakeABooks", null, new { @style = "color:white;" })</li>  
 
-                            if (LibrarySystem.AuthenticationService.AuthenticateLoginUserService.IsAdmin()==true)
+                            if (LibrarySystem.Web.Authentication.UserLogin.IsAdmin()==true)
                             {
 
                     <li  style="left:1em;">@Html.ActionLink("Users", "Index", "Users", null, new { @style = "color:white;" })</li>
@@ -56,7 +56,7 @@
 
 
                     @{
-                        if (LibrarySystem.AuthenticationService.AuthenticateLoginUserService.IsNotLogedUser() != false)
+                        if (LibrarySystem.Web.Authentication.UserLogin.IsNotLogedUser() != false)
                         {
                     <li style="left:1em;">@Html.ActionLink("Login", "Login", "Home", null, new { @style = "color:white;" })</li>
                      <li style="left:1em;">@Html.ActionLink("Register", "Register", "Users", null, new { @style = "color:white;" })</li>

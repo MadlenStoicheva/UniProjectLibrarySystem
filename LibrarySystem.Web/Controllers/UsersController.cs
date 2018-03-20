@@ -9,8 +9,8 @@ using System.Web.Mvc;
 using LibrarySystemProject.Models.UserViewModel;
 using System.Web.Security;
 using LibrarySystem.DAL.Repositories.UserRepository;
-using LibrarySystem.RelationalServices.Domain.User;
-using LibrarySystem.AuthenticationService;
+using LibrarySystem.RelationServices.Domain.User;
+using LibrarySystem.Web.Authentication;
 
 namespace LibrarySystemProject.Controllers
 {
@@ -39,7 +39,7 @@ namespace LibrarySystemProject.Controllers
         public ActionResult Profile()
         {
 
-            int id = AuthenticateLoginUserService.GetUserId();
+            int id = UserLogin.GetUserId();
             UserRepository repository = new UserRepository();
             UserEditViewModel model = new UserEditViewModel();
             User user = repository.GetById(id);
@@ -48,7 +48,7 @@ namespace LibrarySystemProject.Controllers
             model.password = user.Password;
             model.firstName = user.FirstName;
             model.lastName = user.LastName;
-            model.Id = AuthenticateLoginUserService.GetUserId();
+            model.Id = UserLogin.GetUserId();
 
             return View(model);
         }

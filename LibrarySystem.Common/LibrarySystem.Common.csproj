@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{23E20B91-A3E0-4415-A258-14C2687A3B35}</ProjectGuid>
+    <ProjectGuid>{34D11380-0509-4399-B236-515D8CA2654B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LibrarySystem.Common</RootNamespace>
     <AssemblyName>LibrarySystem.Common</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LibrarySystem.BaseService.Domain\LibrarySystem.BaseService.Domain.csproj">
-      <Project>{7B28E341-F519-44DD-9CF7-D429BCC36AD8}</Project>
+      <Project>{3B7A9FAA-8B8E-4FEC-AC01-C14927A74512}</Project>
       <Name>LibrarySystem.BaseService.Domain</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,17 +1,18 @@
 ﻿
-using LibrarySystem.AuthenticationService;
+
 using LibrarySystem.DAL.Repositories.BookRepository;
 using LibrarySystem.DAL.Repositories.TakeABookRepository;
 using LibrarySystem.DAL.Repositories.UserRepository;
-using LibrarySystem.RelationalServices.Domain.Book;
-using LibrarySystem.RelationalServices.Domain.TakeABook;
-using LibrarySystem.RelationalServices.Domain.User;
+using LibrarySystem.Web.Authentication;
+using LibrarySystem.RelationServices.Domain.TakeABook;
 using LibrarySystemProject.Models.TakeABookViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using LibrarySystem.RelationServices.Domain.Book;
+using LibrarySystem.RelationServices.Domain.User;
 
 namespace LibrarySystemProject.Controllers
 {
@@ -24,7 +25,7 @@ namespace LibrarySystemProject.Controllers
 
             List<TakeABook> takeABooks = repository.GetAll();
             List<TakeABook> takeABook = new List<TakeABook>();
-            if (AuthenticateLoginUserService.IsAdmin())
+            if (UserLogin.IsAdmin())
             {
                 takeABook = takeABooks;
             }
@@ -32,7 +33,7 @@ namespace LibrarySystemProject.Controllers
             {
                 foreach (var item in takeABooks)
                 {
-                    if (item.UserId == AuthenticateLoginUserService.GetUserId())
+                    if (item.UserId == UserLogin.GetUserId())
                     {
                         takeABook.Add(item);
                     }
@@ -103,13 +104,13 @@ namespace LibrarySystemProject.Controllers
             TakeABook takeABook = new TakeABook();
             takeABook.BookId = model.BookId;
 
-            if (AuthenticateLoginUserService.IsAdmin())
+            if (UserLogin.IsAdmin())
             {
                 takeABook.UserId = model.UserId;
             }
             else
             {
-                takeABook.UserId = AuthenticateLoginUserService.GetUserId();
+                takeABook.UserId = UserLogin.GetUserId();
             }
             //takeABook.dateTaken = model.dateTaken.Date;
             takeABook.DateTaken = System.DateTime.Now;

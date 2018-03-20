@@ -1,6 +1,6 @@
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.BaseService.Domain\bin\Debug\LibrarySystem.BaseService.Domain.dll
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.BaseService.Domain\bin\Debug\LibrarySystem.BaseService.Domain.pdb
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csprojResolveAssemblyReference.cache
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csproj.CoreCompileInputs.cache
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.dll
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.pdb
+c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\bin\Debug\LibrarySystem.BaseService.Domain.dll
+c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csprojResolveAssemblyReference.cache
+c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csproj.CoreCompileInputs.cache
+c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.dll
+c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.pdb

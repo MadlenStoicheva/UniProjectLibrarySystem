@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibrarySystem.BaseService.Domain
 {
-    public class BaseEntity
+   public class BaseEntity
     {
         public int Id { get; set; }
     }

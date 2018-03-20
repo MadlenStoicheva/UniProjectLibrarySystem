@@ -1,8 +1,0 @@
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.RelationalServices.Domain\bin\Debug\LibrarySystem.RelationalServices.Domain.dll
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.RelationalServices.Domain\bin\Debug\LibrarySystem.RelationalServices.Domain.pdb
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.RelationalServices.Domain\bin\Debug\LibrarySystem.BaseService.Domain.dll
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.RelationalServices.Domain\bin\Debug\LibrarySystem.BaseService.Domain.pdb
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.RelationalServices.Domain\obj\Debug\LibrarySystem.RelationalServices.Domain.csprojResolveAssemblyReference.cache
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.RelationalServices.Domain\obj\Debug\LibrarySystem.RelationalServices.Domain.csproj.CoreCompileInputs.cache
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.RelationalServices.Domain\obj\Debug\LibrarySystem.RelationalServices.Domain.dll
-c:\users\madlen\source\repos\LibrarySystem\LibrarySystem.RelationalServices.Domain\obj\Debug\LibrarySystem.RelationalServices.Domain.pdb

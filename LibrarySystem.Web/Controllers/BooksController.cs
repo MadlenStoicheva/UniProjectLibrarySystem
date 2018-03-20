@@ -4,7 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using LibrarySystem.DAL.Repositories.BookRepository;
-using LibrarySystem.RelationalServices.Domain.Book;
+
+using LibrarySystem.RelationServices.Domain.Book;
 using LibrarySystemProject.Models.BookViewModel;
 
 namespace LibrarySystemProject.Controllers
@@ -76,7 +77,7 @@ namespace LibrarySystemProject.Controllers
             var repository = new BookRepository();
             repository.Insert(book);
 
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("IndexPage","Home");
         }
 
         [LibrarySystem.Web.ActionFilters.AuthenticationFilter(RequireAdminRole = true)]
