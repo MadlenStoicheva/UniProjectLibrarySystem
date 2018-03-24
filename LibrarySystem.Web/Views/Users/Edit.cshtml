@@ -13,6 +13,22 @@
     <div class="form-horizontal">
         @*<h4>UserEditViewModel</h4>*@
         <hr />
+        <div class="form-group">
+            @Html.LabelFor(model => model.imgURL, "ImgURL", new { @class = "control-label col-md-5", @style = "color: #333; font-size:15px;" })
+
+            @Html.TextBoxFor(model => model.imgURL, new { @class = "form-control col-md-offset-5" })
+            @Html.ValidationMessageFor(model => model.imgURL)
+
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, "Email", htmlAttributes: new { @class = "control-label col-md-5", @style = "color: #333; font-size:15px;" })
+            
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control col-md-offset-5" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            
+        </div>
+
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.Id)
 

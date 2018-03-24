@@ -14,7 +14,7 @@ namespace LibrarySystem.Web.Authentication
 
             if (user != null)
             {
-                if (user.IsAdmin)
+                if (user.IsAdmin==true)
                 {
                     return true;
                 }
@@ -50,6 +50,13 @@ namespace LibrarySystem.Web.Authentication
             User user = (User)HttpContext.Current.Session["LoggedUser"];
 
             return user.Id;
+        }
+
+        public static User GetUserName()
+        {
+            User user = (User)HttpContext.Current.Session["LoggedUser"];
+
+            return user;
         }
 
     }

@@ -44,11 +44,15 @@ namespace LibrarySystemProject.Controllers
             UserEditViewModel model = new UserEditViewModel();
             User user = repository.GetById(id);
 
+            model.Id = UserLogin.GetUserId();
+            model.imgURL = user.ImgURL;
+            model.Email = user.Email;
             model.username = user.Username;
             model.password = user.Password;
             model.firstName = user.FirstName;
             model.lastName = user.LastName;
-            model.Id = UserLogin.GetUserId();
+            model.isAdmin = user.IsAdmin;
+
 
             return View(model);
         }
@@ -61,10 +65,13 @@ namespace LibrarySystemProject.Controllers
             User user = new User
             {
                 Id = model.Id,
+                ImgURL = model.imgURL,
+                Email = model.Email,
                 Username = model.username,
                 Password = model.password,
                 FirstName = model.firstName,
-                LastName = model.lastName
+                LastName = model.lastName,
+                IsAdmin = model.isAdmin
             };
 
             repository.Save(user);
@@ -98,10 +105,12 @@ namespace LibrarySystemProject.Controllers
             }
 
             User user = new User();
+            user.ImgURL = model.imgURL;
             user.Username = model.username;
             user.Password = model.password;
             user.FirstName = model.firstName;
             user.LastName = model.lastName;
+            user.Email = model.Email;
             user.IsAdmin = model.isAdmin;
 
             var repository = new UserRepository();
@@ -122,10 +131,12 @@ namespace LibrarySystemProject.Controllers
 
             User user = new User();
             // user.Id = model.Id;
+            user.ImgURL = model.imgURL;
             user.Username = model.username;
             user.Password = model.password;
             user.FirstName = model.firstName;
             user.LastName = model.lastName;
+            user.Email = model.Email;
             user.IsAdmin = model.isAdmin;
 
             var repository = new UserRepository();
@@ -148,6 +159,8 @@ namespace LibrarySystemProject.Controllers
             {
                 User user = repository.GetById(id.Value);
                 model.Id = user.Id;
+                model.imgURL = user.ImgURL;
+                model.Email = user.Email;
                 model.username = user.Username;
                 model.password = user.Password;
                 model.firstName = user.FirstName;
@@ -172,6 +185,8 @@ namespace LibrarySystemProject.Controllers
 
             User user = new User();
             user.Id = model.Id;
+            user.ImgURL = model.imgURL;
+            user.Email = model.Email;
             user.Username = model.username;
             user.Password = model.password;
             user.FirstName = model.firstName;
@@ -194,10 +209,12 @@ namespace LibrarySystemProject.Controllers
             User user = repository.GetById(id);
 
             UserDeleteViewModel model = new UserDeleteViewModel();
+            model.imgURL = user.ImgURL;
             model.username = user.Username;
             model.password = user.Password;
             model.firstName = user.FirstName;
             model.lastName = user.LastName;
+            model.Email = user.Email;
             model.isAdmin = user.IsAdmin;
 
             return View(model);

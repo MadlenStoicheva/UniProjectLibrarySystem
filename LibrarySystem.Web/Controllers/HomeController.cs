@@ -14,13 +14,6 @@ namespace LibrarySystem.Web.Controllers
         
         public ActionResult IndexPage()
         {
-            //BookRepository repository = new BookRepository();
-            //List<Book> books = repository.GetAll();
-
-            //BookListViewModel model = new BookListViewModel();
-            //model.Books = books;
-
-            //return View(model);
 
             return View();
         }
@@ -43,6 +36,8 @@ namespace LibrarySystem.Web.Controllers
             UserRepository repo = new UserRepository();
             List<User> items = repo.GetAll(i => i.Username == model.Username && i.Password == model.Password);
             Session["LoggedUser"] = items.Count > 0 ? items[0] : null;
+
+            Session["UserName"] = model.Username;
 
             if (items.Count <= 0)
                 this.ModelState.AddModelError("failedLogin", "Login failed!");

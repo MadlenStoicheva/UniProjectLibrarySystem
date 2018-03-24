@@ -48,9 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\LibrarySystemContext.cs" />
-    <Compile Include="Migrations\201803191604145_Initial.cs" />
-    <Compile Include="Migrations\201803191604145_Initial.Designer.cs">
-      <DependentUpon>201803191604145_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201803241703008_automatic.cs" />
+    <Compile Include="Migrations\201803241703008_automatic.Designer.cs">
+      <DependentUpon>201803241703008_automatic.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,12 +62,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803191604145_Initial.resx">
-      <DependentUpon>201803191604145_Initial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LibrarySystem.BaseService.Domain\LibrarySystem.BaseService.Domain.csproj">
@@ -82,6 +76,11 @@
       <Project>{73C9AD44-2620-4B1D-9DCB-B4C3FDB3E461}</Project>
       <Name>LibrarySystem.RelationServices.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803241703008_automatic.resx">
+      <DependentUpon>201803241703008_automatic.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

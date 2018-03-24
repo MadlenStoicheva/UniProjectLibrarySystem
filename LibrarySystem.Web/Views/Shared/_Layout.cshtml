@@ -38,7 +38,7 @@
                     <li style="left:1em;">@Html.ActionLink("Books", "Index", "Books", null, new { @style = "color:white;" })</li>
                     <li style="left:1em;">@Html.ActionLink("Take a book", "Index", "TakeABooks", null, new { @style = "color:white;" })</li>  
 
-                            if (LibrarySystem.Web.Authentication.UserLogin.IsAdmin()==true)
+                            if (LibrarySystem.Web.Authentication.UserLogin.IsAdmin() == true)
                             {
 
                     <li  style="left:1em;">@Html.ActionLink("Users", "Index", "Users", null, new { @style = "color:white;" })</li>
@@ -51,8 +51,17 @@
 
                     <li class="btn-danger" style="left:1em;">@Html.ActionLink("Logout", "Logout", "Home", null, new { @style = "color:white;" })</li>
 
+                            if (LibrarySystem.Web.Authentication.UserLogin.IsAdmin() == true)
+                            {
+                                <li style="left:1em;"> <a>Hello, @Session["UserName"] ! (admin)</a></li>
+                            }
+                            else
+                            {
+                                <li style="left:1em;"> <a>Hello, @Session["UserName"] !</a></li>
+                            }
+                             
                         }
-                    }
+                     }
 
 
                     @{
