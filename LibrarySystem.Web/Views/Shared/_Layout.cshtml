@@ -14,6 +14,9 @@
         li:hover {
             background-color: black;
         }
+        .dropdown-menu li{
+            text-align:center;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +54,7 @@
                             if (LibrarySystem.Web.Authentication.UserLogin.IsAdmin() == true)
                             {
                                 <li style="left:1em;"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, @Session["UserName"] ! (admin) <i class="fa fa-caret-down"></i></a>
-                                     <ul class="dropdown-menu" style="background-color:black; width:100%; ">
+                                     <ul class="dropdown-menu" style="background-color:black; width:100%; text-align:center;">
                                          <li style="left:1em;">@Html.ActionLink("Profile", "Profile", "Users", null, new { @style = "color:white;" })</li>  
                                         <li class="btn-danger" style="left:1em;">@Html.ActionLink("Logout", "Logout", "Home", null, new { @style = "color:white;" })</li>
 
