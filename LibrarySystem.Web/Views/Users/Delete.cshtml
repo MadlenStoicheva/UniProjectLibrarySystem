@@ -12,7 +12,12 @@
     @*<h4>UserDeleteViewModel</h4>*@
     
     <dl class="dl-horizontal">
-
+        <dt style="color: #333; font-size:20px;">
+            @Html.DisplayName("Image")
+        </dt>
+        <dd>
+            <img src="@Model.imgURL" alt="image" style="width:160px; height:200px; padding-bottom:1em;" />
+        </dd>
         <dt style="color: #333; font-size:20px;">
             @Html.DisplayName("Username name")
         </dt>

@@ -10,6 +10,7 @@ namespace LibrarySystemProject.Models.BookViewModel
     public class BookDeleteViewModel : BaseEntity
     {
         [System.ComponentModel.DataAnnotations.Required]
+        public string imgURL { get; set; }
         public string numberISBN { get; set; }
         public string title { get; set; }
         public string author { get; set; }

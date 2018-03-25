@@ -152,6 +152,7 @@ namespace LibrarySystemProject.Controllers
             Book book = repository.GetById(id);
 
             BookDeleteViewModel model = new BookDeleteViewModel();
+            model.imgURL = book.ImgURL;
             model.numberISBN = book.NumberISBN;
             model.title = book.Title;
             model.author = book.Author;
