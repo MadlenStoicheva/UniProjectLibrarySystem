@@ -7,7 +7,7 @@
 
 
 
-@model LibrarySystemProject.Models.BookViewModel.BookListViewModel
+@model LibrarySystem.Web.ViewModels.EmailSendingViewModel.EmailSendingViewModel
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -115,7 +115,7 @@
     </div>
 
     <div>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1RIlYteTPmiDC9JWUFWVZ2AEueMU&hl=en" width="100%" height="480"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1RIlYteTPmiDC9JWUFWVZ2AEueMU&hl=en" width="100%"  height="480"></iframe>
     </div>
 
 
@@ -130,24 +130,33 @@
                 <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
             </div>
             <div class="col-md-8">
-                <form action="https://formspree.io/madlen.stoicheva@gmail.com" method="POST">
-                    <div class="row">
-
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                        </div>
-                    </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-12 form-group">
-                            <button class="btn pull-right" type="submit" style=" padding: 10px 20px;  background-color: #333; color: #f1f1f1; border-radius: 0; transition: .2s;">Send</button>
-                        </div>
-                    </div>
-                </form>
+                @*<form action="https://formspree.io/madlen.stoicheva@gmail.com" method="POST">*@
+                @using (Html.BeginForm())
+    {
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    @*<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>*@
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email" } })
+                    @Html.ValidationMessageFor(model => model.Email)
+                </div>
+                <div class="col-sm-6 form-group">
+                    @*<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>*@
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Name" } })
+                    @Html.ValidationMessageFor(model => model.Name)
+                </div>
+            </div>
+            @*<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>*@
+            @Html.TextAreaFor(model => model.Comment, new { htmlAttributes = new { @class = "form-control" }, style = "width: 100%; border-radius: 5px", rows = 5, placeholder = "Comment" })
+           <br/>
+            @Html.ValidationMessageFor(model => model.Comment)
+            <br>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <button class="btn pull-right" type="submit" style=" padding: 10px 20px;  background-color: #333; color: #f1f1f1; border-radius: 0; transition: .2s;">Send</button>
+                </div>
+            </div>
+}
+                @*</form>*@
             </div>
         </div>
     </div>

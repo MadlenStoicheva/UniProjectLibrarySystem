@@ -1,5 +1,7 @@
 ﻿using LibrarySystem.DAL.Repositories.UserRepository;
+using LibrarySystem.NotificationServices;
 using LibrarySystem.RelationServices.Domain.User;
+using LibrarySystem.Web.ViewModels.EmailSendingViewModel;
 using LibrarySystemProject.Views.Login;
 using System;
 using System.Collections.Generic;
@@ -53,5 +55,33 @@ namespace LibrarySystem.Web.Controllers
             System.Web.HttpContext.Current.Session["LoggedUser"] = null;
             return RedirectToAction("IndexPage", "Home");
         }
+
+
+        //[HttpGet]
+        //public ActionResult Contact()
+        //{
+        //    return View();
+        //}
+
+        [HttpPost]
+        public ActionResult IndexPage(EmailSendingViewModel emailSendingViewModel)
+        {
+            EmailSender emailSender = new EmailSender();
+
+            if (emailSendingViewModel.Comment == null || emailSendingViewModel.Name == null || emailSendingViewModel.Email == null)
+            {
+                TempData["Email"] = "You have to enter all the needed information for sending an email!";
+                return View("IndexPage");
+            }
+            else
+            {
+                emailSender.SendMail(emailSendingViewModel.Email, emailSendingViewModel.Name, emailSendingViewModel.Comment);
+                TempData["Email"] = "You have send the email successfully!";
+                return View("Contact");
+            }
+    
+        }
+
+
     }
 }

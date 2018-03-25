@@ -163,3 +163,7 @@ D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.Web\obj\Debug\LibrarySyst
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.Web\obj\Debug\LibrarySystem.Web.csproj.CoreCompileInputs.cache
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.Web\obj\Debug\LibrarySystem.Web.dll
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.Web\obj\Debug\LibrarySystem.Web.pdb
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.Web\bin\LibrarySystem.NotificationServices.dll
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.Web\bin\LibrarySystem.NotificationServices.pdb
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.Web\bin\LibrarySystem.NotificationServices.dll
+D:\LibraryNew\UniProjectLibrarySystem\LibrarySystem.Web\bin\LibrarySystem.NotificationServices.pdb

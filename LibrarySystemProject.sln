@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarySystem.Web", "LibrarySystem.Web\LibrarySystem.Web.csproj", "{2D0D3999-F598-424B-BB1A-A65241411D10}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarySystem.Common", "LibrarySystem.Common\LibrarySystem.Common.csproj", "{34D11380-0509-4399-B236-515D8CA2654B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarySystem.RelationServices.Domain", "LibrarySystem.RelationServices.Domain\LibrarySystem.RelationServices.Domain.csproj", "{73C9AD44-2620-4B1D-9DCB-B4C3FDB3E461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarySystem.NotificationServices", "LibrarySystem.NotificationServices\LibrarySystem.NotificationServices.csproj", "{BA214209-7698-4B28-881F-51CB56D7FC13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{73C9AD44-2620-4B1D-9DCB-B4C3FDB3E461}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73C9AD44-2620-4B1D-9DCB-B4C3FDB3E461}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73C9AD44-2620-4B1D-9DCB-B4C3FDB3E461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA214209-7698-4B28-881F-51CB56D7FC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA214209-7698-4B28-881F-51CB56D7FC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA214209-7698-4B28-881F-51CB56D7FC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA214209-7698-4B28-881F-51CB56D7FC13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
