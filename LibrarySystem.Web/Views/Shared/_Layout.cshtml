@@ -47,17 +47,27 @@
 
                             }
 
-                    <li style="left:1em;">@Html.ActionLink("Profile", "Profile", "Users", null, new { @style = "color:white;" })</li>  
-
-                    <li class="btn-danger" style="left:1em;">@Html.ActionLink("Logout", "Logout", "Home", null, new { @style = "color:white;" })</li>
-
+                    
                             if (LibrarySystem.Web.Authentication.UserLogin.IsAdmin() == true)
                             {
-                                <li style="left:1em;"> <a>Hello, @Session["UserName"] ! (admin)</a></li>
+                                <li style="left:1em;"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, @Session["UserName"] ! (admin)</a>
+                                     <ul class="dropdown-menu" style="background-color:black; width:100%;">
+                                         <li style="left:1em;">@Html.ActionLink("Profile", "Profile", "Users", null, new { @style = "color:white;" })</li>  
+                                        <li class="btn-danger" style="left:1em;">@Html.ActionLink("Logout", "Logout", "Home", null, new { @style = "color:white;" })</li>
+
+                                     </ul>
+                                </li>
+
                             }
                             else
                             {
-                                <li style="left:1em;"> <a>Hello, @Session["UserName"] !</a></li>
+                                <li style="left:1em;"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, @Session["UserName"] !</a>
+                                 <ul class="dropdown-menu" style="background-color:black; width:2em;">
+                                         <li style="left:1em;">@Html.ActionLink("Profile", "Profile", "Users", null, new { @style = "color:white;" })</li>  
+                                        <li class="btn-danger" style="left:1em;">@Html.ActionLink("Logout", "Logout", "Home", null, new { @style = "color:white;" })</li>
+
+                                     </ul>
+                                </li>
                             }
                              
                         }
