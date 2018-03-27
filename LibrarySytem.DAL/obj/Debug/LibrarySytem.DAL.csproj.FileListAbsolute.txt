@@ -36,8 +36,6 @@ D:\MadlenProject\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.pdb
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.Migrations.automatic.resources
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csproj.GenerateResource.Cache
-<<<<<<< HEAD
-=======
 C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySytem.DAL.dll.config
 C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySytem.DAL.dll
 C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySytem.DAL.pdb
@@ -58,4 +56,3 @@ C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.cs
 C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csproj.CopyComplete
 C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.dll
 C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.pdb
->>>>>>> 3ca160fd98a2913ce9311163666637142816615e

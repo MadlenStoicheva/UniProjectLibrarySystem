@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-﻿@*@{
-        ViewBag.Title = "IndexPage";
-
-    }
-
-    <h2>IndexPage</h2>*@
-
-
-
-@model LibrarySystem.Web.ViewModels.EmailSendingViewModel.EmailSendingViewModel
-=======
 ﻿@model LibrarySystem.Web.ViewModels.EmailSendingViewModel.EmailSendingViewModel
->>>>>>> 3ca160fd98a2913ce9311163666637142816615e
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -133,27 +120,18 @@
                 <div class="col-sm-6 form-group">
                     @*<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>*@
                     @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email" } })
-<<<<<<< HEAD
-=======
                     @Html.ValidationMessageFor(model => model.Email)
->>>>>>> 3ca160fd98a2913ce9311163666637142816615e
                 </div>
                 <div class="col-sm-6 form-group">
                     @*<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>*@
                     @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Name" } })
-<<<<<<< HEAD
-=======
                     @Html.ValidationMessageFor(model => model.Name)
->>>>>>> 3ca160fd98a2913ce9311163666637142816615e
                 </div>
             </div>
             @*<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>*@
             @Html.TextAreaFor(model => model.Comment, new { htmlAttributes = new { @class = "form-control" }, style = "width: 100%; border-radius: 5px", rows = 5, placeholder = "Comment" })
-<<<<<<< HEAD
-=======
            <br/>
             @Html.ValidationMessageFor(model => model.Comment)
->>>>>>> 3ca160fd98a2913ce9311163666637142816615e
             <br>
             <div class="row">
                 <div class="col-md-12 form-group">

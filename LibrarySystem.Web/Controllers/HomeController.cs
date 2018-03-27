@@ -66,24 +66,11 @@ namespace LibrarySystem.Web.Controllers
         [HttpPost]
         public ActionResult IndexPage(EmailSendingViewModel emailSendingViewModel)
         {
-<<<<<<< HEAD
-            EmailSender emailSender = new EmailSender();
-=======
             //EmailSender emailSender = new EmailSender();
->>>>>>> 3ca160fd98a2913ce9311163666637142816615e
 
             if (emailSendingViewModel.Comment == null || emailSendingViewModel.Name == null || emailSendingViewModel.Email == null)
             {
                 TempData["Email"] = "You have to enter all the needed information for sending an email!";
-<<<<<<< HEAD
-                return View("Contact");
-            }
-
-            emailSender.SendMail(emailSendingViewModel.Email, emailSendingViewModel.Name, emailSendingViewModel.Comment);
-            TempData["Email"] = "You have send the email successfully!";
-
-            return View("Contact");
-=======
                 return View("IndexPage");
             }
             else
@@ -93,7 +80,6 @@ namespace LibrarySystem.Web.Controllers
                 return View("Contact");
             }
     
->>>>>>> 3ca160fd98a2913ce9311163666637142816615e
         }
 
 
