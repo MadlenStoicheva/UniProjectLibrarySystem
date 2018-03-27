@@ -8,13 +8,18 @@
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+
         li:hover {
-            background-color: black;
+            background-color: #1a1a1a;
         }
-
+        .dropdown-menu li{
+            text-align:center;
+           
+        }
+           
     </style>
-
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #333; border-radius: 0; transition: .2s;
@@ -47,10 +52,18 @@
 
                             }
 
-                    <li style="left:1em;">@Html.ActionLink("Profile", "Profile", "Users", null, new { @style = "color:white;" })</li>  
+                    
+                            if (LibrarySystem.Web.Authentication.UserLogin.IsAdmin() == true)
+                            {
+                                <li style="left:1em;"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, @Session["UserName"] ! (admin) <i class="fa fa-caret-down"></i></a>
+                                     <ul class="dropdown-menu" style="background-color:#333; width:100%; text-align:center;">
+                                         <li style="left:1em;">@Html.ActionLink("Profile", "Profile", "Users", null, new { @style = "color:white;"})</li>  
+                                        <li class="btn-danger" style="left:1em;">@Html.ActionLink("Logout", "Logout", "Home", null, new { @style = "color:white;" })</li>
 
-                    <li class="btn-danger" style="left:1em;">@Html.ActionLink("Logout", "Logout", "Home", null, new { @style = "color:white;" })</li>
+                                     </ul>
+                                </li>
 
+<<<<<<< HEAD
                             if (LibrarySystem.Web.Authentication.UserLogin.IsAdmin() == true)
                             {
                                 <li style="left:1em;"> <a>Hello, @Session["UserName"] ! (admin)</a></li>
@@ -58,6 +71,19 @@
                             else
                             {
                                 <li style="left:1em;"> <a>Hello, @Session["UserName"] !</a></li>
+=======
+                            }
+                            else
+                            {
+                                <li style="left:1em; width:160px;"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hello, @Session["UserName"] !  <i class="fa fa-caret-down" style="padding-left:3em; text-align:center;"></i></a>
+                                   
+                                    <ul class="dropdown-menu" style="background-color:#333;" >
+                                         <li style="left:1em;" class="item" >@Html.ActionLink("Profile", "Profile", "Users", null, new { @class = "my-class", @style = "color:white;" })</li>  
+                                        <li class="btn-danger item" style="left:1em;">@Html.ActionLink("Logout", "Logout", "Home", null, new { @class = "my-class", @style = "color:white;" })</li>
+
+                                     </ul>
+                                </li>
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e
                             }
                              
                         }

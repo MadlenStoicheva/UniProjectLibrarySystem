@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@*@{
         ViewBag.Title = "IndexPage";
 
@@ -8,21 +9,16 @@
 
 
 @model LibrarySystem.Web.ViewModels.EmailSendingViewModel.EmailSendingViewModel
+=======
+﻿@model LibrarySystem.Web.ViewModels.EmailSendingViewModel.EmailSendingViewModel
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <div class="container">
         <p></p>
@@ -37,15 +33,15 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="http://timedotcom.files.wordpress.com/2014/12/ya.jpg" alt="Los Angeles" style="height:40em; width:100%;">
+                    <img src="http://timedotcom.files.wordpress.com/2014/12/ya.jpg" alt="Book" style="height:40em; width:100%;">
                 </div>
 
                 <div class="item">
-                    <img src="https://www.sharefaith.com/blog/wp-content/uploads/2016/02/books-blog.jpg" alt="Chicago"  style="height:40em; width:100%;">
+                    <img src="https://www.sharefaith.com/blog/wp-content/uploads/2016/02/books-blog.jpg" alt="Book"  style="height:40em; width:100%;">
                 </div>
 
                 <div class="item">
-                    <img src="https://www.sharefaith.com/blog/wp-content/uploads/2016/02/top-christianbooks.jpg" alt="New york"  style="height:40em; width:100%;">
+                    <img src="https://www.sharefaith.com/blog/wp-content/uploads/2016/02/top-christianbooks.jpg" alt="Book"  style="height:40em; width:100%;">
                 </div>
             </div>
 
@@ -89,21 +85,21 @@
     <div class="row text-center" style="padding-bottom:2em;">
         <div class="col-sm-4">
             <div class="thumbnail">
-                <img src="https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1493664402/pro_pbid_3918880.jpg" alt="Paris" width="400" height="250">
+                <img src="https://res.cloudinary.com/bookbub/image/upload/t_ci_new_browse_cover,f_auto,q_auto/v1493664402/pro_pbid_3918880.jpg" alt="White Chrysanthemum" width="400" height="250">
                 <p><strong>White Chrysanthemum</strong></p>
                 <p> by Mary Lynn Bracht</p>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="thumbnail">
-                <img src="https://s3.r29static.com//bin/entry/330/545x835,80/1924047/image.jpg" alt="New York" width="400" height="250">
+                <img src="https://s3.r29static.com//bin/entry/330/545x835,80/1924047/image.jpg" alt="Asymmetry" width="400" height="250">
                 <p><strong>Asymmetry</strong></p>
                 <p>by Lisa Halliday </p>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="thumbnail">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/91bqT3ID7aL.jpg" alt="San Francisco" width="400" height="250">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91bqT3ID7aL.jpg" alt="As You Wish" width="400" height="250">
                 <p><strong>As You Wish</strong></p>
                 <p>by Jude Deveraux</p>
             </div>
@@ -127,7 +123,7 @@
             <div class="col-md-4">
                 <p><span class="glyphicon glyphicon-map-marker"></span>Plovdiv, Bulgaria</p>
                 <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-                <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: madlen.stoicheva@gmail.com</p>
             </div>
             <div class="col-md-8">
                 @*<form action="https://formspree.io/madlen.stoicheva@gmail.com" method="POST">*@
@@ -137,14 +133,27 @@
                 <div class="col-sm-6 form-group">
                     @*<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>*@
                     @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email" } })
+<<<<<<< HEAD
+=======
+                    @Html.ValidationMessageFor(model => model.Email)
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e
                 </div>
                 <div class="col-sm-6 form-group">
                     @*<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>*@
                     @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Name" } })
+<<<<<<< HEAD
+=======
+                    @Html.ValidationMessageFor(model => model.Name)
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e
                 </div>
             </div>
             @*<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>*@
             @Html.TextAreaFor(model => model.Comment, new { htmlAttributes = new { @class = "form-control" }, style = "width: 100%; border-radius: 5px", rows = 5, placeholder = "Comment" })
+<<<<<<< HEAD
+=======
+           <br/>
+            @Html.ValidationMessageFor(model => model.Comment)
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e
             <br>
             <div class="row">
                 <div class="col-md-12 form-group">
@@ -157,7 +166,3 @@
         </div>
     </div>
 
-
-
-
-</body>

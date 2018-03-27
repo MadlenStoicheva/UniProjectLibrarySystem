@@ -8,9 +8,14 @@ using System.Threading.Tasks;
 
 namespace LibrarySystem.NotificationServices
 {
+<<<<<<< HEAD
     public class EmailSender
     {
 
+=======
+    public static class EmailSender
+    {
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e
         public static async Task SendEmailAsync(string email, string subject, string message)
         {
             try
@@ -18,7 +23,11 @@ namespace LibrarySystem.NotificationServices
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587)
                 {
                     UseDefaultCredentials = false,
+<<<<<<< HEAD
                     Credentials = new NetworkCredential("madlen.stoicheva@gmail.com", "skullhong23")
+=======
+                    Credentials = new NetworkCredential("your-name@gmail.com", "your-pass")
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e
                 };
 
                 MailMessage mailMessage = new MailMessage
@@ -40,10 +49,16 @@ namespace LibrarySystem.NotificationServices
         }
 
 
+<<<<<<< HEAD
 
         //public SmtpClient Client { get; set; }
 
         ////Send email using mailtrap.io
+=======
+        //public SmtpClient Client { get; set; }
+
+        //Send email using mailtrap.io
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e
         //public EmailSender()
         //{
         //    Client = new SmtpClient("smtp.mailtrap.io", 2525)
@@ -57,5 +72,10 @@ namespace LibrarySystem.NotificationServices
         //{
         //    Client.Send(email, "infinite.love@abv.bg", name, comment);
         //}
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e
     }
 }

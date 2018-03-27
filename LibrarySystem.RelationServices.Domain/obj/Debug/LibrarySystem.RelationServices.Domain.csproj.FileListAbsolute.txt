@@ -14,3 +14,15 @@ D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\o
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csproj.CoreCompileInputs.cache
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.dll
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.pdb
+<<<<<<< HEAD
+=======
+C:\builds\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.RelationServices.Domain.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.RelationServices.Domain.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.BaseService.Domain.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csprojResolveAssemblyReference.cache
+C:\builds\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csproj.CoreCompileInputs.cache
+C:\builds\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csproj.CopyComplete
+C:\builds\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.pdb
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e

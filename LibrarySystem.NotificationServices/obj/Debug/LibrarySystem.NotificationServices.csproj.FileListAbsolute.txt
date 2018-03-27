@@ -4,3 +4,12 @@ D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.csproj.CoreCompileInputs.cache
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.dll
 D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.pdb
+<<<<<<< HEAD
+=======
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.NotificationServices.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.NotificationServices.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.csprojResolveAssemblyReference.cache
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.csproj.CoreCompileInputs.cache
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.pdb
+>>>>>>> 3ca160fd98a2913ce9311163666637142816615e

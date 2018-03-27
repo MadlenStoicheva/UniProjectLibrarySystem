@@ -4,3 +4,9 @@ c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\
 c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csproj.CoreCompileInputs.cache
 c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.dll
 c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\bin\Debug\LibrarySystem.BaseService.Domain.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csprojResolveAssemblyReference.cache
+C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csproj.CoreCompileInputs.cache
+C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.pdb

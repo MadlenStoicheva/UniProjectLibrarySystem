@@ -6,3 +6,12 @@ c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.Common\obj\Debug\Li
 c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.csproj.CoreCompileInputs.cache
 c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.dll
 c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\bin\Debug\LibrarySystem.Common.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\bin\Debug\LibrarySystem.Common.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\bin\Debug\LibrarySystem.BaseService.Domain.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.csprojResolveAssemblyReference.cache
+C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.csproj.CoreCompileInputs.cache
+C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.csproj.CopyComplete
+C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.pdb
