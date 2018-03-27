@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace LibrarySystem.NotificationServices
 {
-    public static class EmailSender
+    public class EmailSender
     {
-        public static async Task SendEmailAsync(string email, string subject, string message)
+        public void SendEmail(string email, string subject, string message)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace LibrarySystem.NotificationServices
                 mailMessage.IsBodyHtml = true;
                 mailMessage.Subject = subject;
                 client.EnableSsl = true;
-                await client.SendMailAsync(mailMessage);
+                client.Send(mailMessage);
             }
             catch (Exception ex)
             {

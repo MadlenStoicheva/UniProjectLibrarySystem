@@ -11,6 +11,7 @@ using System.Web.Security;
 using LibrarySystem.DAL.Repositories.UserRepository;
 using LibrarySystem.RelationServices.Domain.User;
 using LibrarySystem.Web.Authentication;
+using LibrarySystem.NotificationServices;
 
 namespace LibrarySystemProject.Controllers
 {
@@ -118,6 +119,8 @@ namespace LibrarySystemProject.Controllers
 
             //return RedirectToAction("Index");
             // return RedirectToAction("Home/IndexPage");
+            EmailSender sender = new EmailSender();
+            sender.SendEmail(model.Email, "Ho-ho-ho", "Merry Christmas!!!");
             return RedirectToAction("IndexPage", "Home");
         }
 
