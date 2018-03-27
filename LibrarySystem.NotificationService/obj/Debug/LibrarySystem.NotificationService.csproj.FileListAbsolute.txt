@@ -1,6 +1,0 @@
-D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationService\bin\Debug\LibrarySystem.NotificationService.dll
-D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationService\bin\Debug\LibrarySystem.NotificationService.pdb
-D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationService\obj\Debug\LibrarySystem.NotificationService.csprojResolveAssemblyReference.cache
-D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationService\obj\Debug\LibrarySystem.NotificationService.csproj.CoreCompileInputs.cache
-D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationService\obj\Debug\LibrarySystem.NotificationService.dll
-D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.NotificationService\obj\Debug\LibrarySystem.NotificationService.pdb
