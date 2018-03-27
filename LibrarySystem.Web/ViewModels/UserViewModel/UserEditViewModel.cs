@@ -9,6 +9,7 @@ namespace LibrarySystemProject.Models.UserViewModel
 {
     public class UserEditViewModel : BaseEntity
     {
+        public string imgURL { get; set; }
         [Required]
         [StringLength(80, MinimumLength = 3, ErrorMessage = "Minimum length is 3 and maximum length is 80")]
         [RegularExpression(@"^([A-z.-_]+)$", ErrorMessage = "Username can consist of letters, dashes and underscores only!")]
@@ -28,6 +29,9 @@ namespace LibrarySystemProject.Models.UserViewModel
         [StringLength(80, MinimumLength = 3, ErrorMessage = "Minimum length is 3 and maximum length is 80")]
         [RegularExpression(@"^([A-z-]+)$", ErrorMessage = "Last Name can consist of letters and dashes only!")]
         public string lastName { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
+        public string Email { get; set; }
 
         public bool isAdmin { get; set; }
     }

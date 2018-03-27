@@ -6,3 +6,11 @@ c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.RelationServices.Do
 c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csproj.CoreCompileInputs.cache
 c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.dll
 c:\users\ivo\source\repos\LibrarySystemProject\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.pdb
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.RelationServices.Domain.dll
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.RelationServices.Domain.pdb
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.BaseService.Domain.dll
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csprojResolveAssemblyReference.cache
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csproj.CoreCompileInputs.cache
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.dll
+D:\MadlenProject\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.pdb

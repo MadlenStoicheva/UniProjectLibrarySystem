@@ -12,46 +12,37 @@
     @*<h4>UserDeleteViewModel</h4>*@
     
     <dl class="dl-horizontal">
+
         <dt style="color: #333; font-size:20px;">
             @Html.DisplayName("Username name")
         </dt>
-
         <dd style="font-size:20px;">
             @Html.DisplayFor(model => model.username)
         </dd>
-
         <dt style="color: #333; font-size:20px;">
             @Html.DisplayName("Password pass")
         </dt>
-
         <dd style="font-size:20px;">
             @Html.DisplayFor(model => model.password)
         </dd>
-
         <dt style="color: #333; font-size:20px;">
             @Html.DisplayName("First Name")
         </dt>
-
         <dd style="font-size:20px;">
             @Html.DisplayFor(model => model.firstName)
         </dd>
-
         <dt style="color: #333; font-size:20px;">
             @Html.DisplayName("Last Name")
         </dt>
-
         <dd style="font-size:20px;">
             @Html.DisplayFor(model => model.lastName)
         </dd>
-
         <dt style="color: #333; font-size:20px;">
             @Html.DisplayName("Is Admin")
         </dt>
-
         <dd style="font-size:20px;">
             @Html.DisplayFor(model => model.isAdmin)
         </dd>
-
     </dl>
 
     @using (Html.BeginForm()) {

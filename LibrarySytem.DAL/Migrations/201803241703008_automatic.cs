@@ -1,9 +1,9 @@
-namespace LibrarySystem.DAL.Migrations
+namespace LibrarySytem.DAL.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class automatic : DbMigration
     {
         public override void Up()
         {
@@ -44,10 +44,12 @@ namespace LibrarySystem.DAL.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        ImgURL = c.String(),
                         Username = c.String(),
                         Password = c.String(),
                         FirstName = c.String(),
                         LastName = c.String(),
+                        Email = c.String(),
                         IsAdmin = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);

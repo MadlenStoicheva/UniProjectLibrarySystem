@@ -162,6 +162,7 @@
     <Compile Include="ViewModels\BookViewModel\BookDeleteViewModel.cs" />
     <Compile Include="ViewModels\BookViewModel\BookEditViewModel.cs" />
     <Compile Include="ViewModels\BookViewModel\BookListViewModel.cs" />
+    <Compile Include="ViewModels\EmailSendingViewModel\EmailSendingViewModel.cs" />
     <Compile Include="ViewModels\TakeABookViewModel\TakeABookCreateViewModel.cs" />
     <Compile Include="ViewModels\TakeABookViewModel\TakeABookDeleteViewModel.cs" />
     <Compile Include="ViewModels\TakeABookViewModel\TakeABookEditViewModel.cs" />
@@ -250,6 +251,10 @@
     <ProjectReference Include="..\LibrarySystem.BaseService.Domain\LibrarySystem.BaseService.Domain.csproj">
       <Project>{3B7A9FAA-8B8E-4FEC-AC01-C14927A74512}</Project>
       <Name>LibrarySystem.BaseService.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibrarySystem.NotificationServices\LibrarySystem.NotificationServices.csproj">
+      <Project>{ba214209-7698-4b28-881f-51cb56d7fc13}</Project>
+      <Name>LibrarySystem.NotificationServices</Name>
     </ProjectReference>
     <ProjectReference Include="..\LibrarySystem.RelationServices.Domain\LibrarySystem.RelationServices.Domain.csproj">
       <Project>{73C9AD44-2620-4B1D-9DCB-B4C3FDB3E461}</Project>

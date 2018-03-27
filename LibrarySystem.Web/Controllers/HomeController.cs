@@ -1,5 +1,7 @@
 ﻿using LibrarySystem.DAL.Repositories.UserRepository;
+using LibrarySystem.NotificationServices;
 using LibrarySystem.RelationServices.Domain.User;
+using LibrarySystem.Web.ViewModels.EmailSendingViewModel;
 using LibrarySystemProject.Views.Login;
 using System;
 using System.Collections.Generic;
@@ -14,13 +16,6 @@ namespace LibrarySystem.Web.Controllers
         
         public ActionResult IndexPage()
         {
-            //BookRepository repository = new BookRepository();
-            //List<Book> books = repository.GetAll();
-
-            //BookListViewModel model = new BookListViewModel();
-            //model.Books = books;
-
-            //return View(model);
 
             return View();
         }
@@ -44,6 +39,8 @@ namespace LibrarySystem.Web.Controllers
             List<User> items = repo.GetAll(i => i.Username == model.Username && i.Password == model.Password);
             Session["LoggedUser"] = items.Count > 0 ? items[0] : null;
 
+            Session["UserName"] = model.Username;
+
             if (items.Count <= 0)
                 this.ModelState.AddModelError("failedLogin", "Login failed!");
 
@@ -58,5 +55,31 @@ namespace LibrarySystem.Web.Controllers
             System.Web.HttpContext.Current.Session["LoggedUser"] = null;
             return RedirectToAction("IndexPage", "Home");
         }
+
+
+        //[HttpGet]
+        //public ActionResult Contact()
+        //{
+        //    return View();
+        //}
+
+        [HttpPost]
+        public ActionResult IndexPage(EmailSendingViewModel emailSendingViewModel)
+        {
+            EmailSender emailSender = new EmailSender();
+
+            if (emailSendingViewModel.Comment == null || emailSendingViewModel.Name == null || emailSendingViewModel.Email == null)
+            {
+                TempData["Email"] = "You have to enter all the needed information for sending an email!";
+                return View("Contact");
+            }
+
+            emailSender.SendMail(emailSendingViewModel.Email, emailSendingViewModel.Name, emailSendingViewModel.Comment);
+            TempData["Email"] = "You have send the email successfully!";
+
+            return View("Contact");
+        }
+
+
     }
 }
