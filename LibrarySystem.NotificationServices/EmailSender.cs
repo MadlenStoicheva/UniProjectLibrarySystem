@@ -17,7 +17,7 @@ namespace LibrarySystem.NotificationServices
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587)
                 {
                     UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential("madlen.stoicheva@gmail.com", "skullhong23")
+                    Credentials = new NetworkCredential("madlen.stoicheva@gmail.com", "skullhong9723")
                 };
 
                 MailMessage mailMessage = new MailMessage

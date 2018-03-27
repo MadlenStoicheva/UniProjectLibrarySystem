@@ -16,3 +16,9 @@ D:\UniProjectLibrarySystem-master (1)\UniProjectLibrarySystem-master\LibrarySyst
 D:\UniProjectLibrarySystem-master (1)\UniProjectLibrarySystem-master\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.csproj.CoreCompileInputs.cache
 D:\UniProjectLibrarySystem-master (1)\UniProjectLibrarySystem-master\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.dll
 D:\UniProjectLibrarySystem-master (1)\UniProjectLibrarySystem-master\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.NotificationServices.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.NotificationServices.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.csprojResolveAssemblyReference.cache
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.csproj.CoreCompileInputs.cache
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.pdb

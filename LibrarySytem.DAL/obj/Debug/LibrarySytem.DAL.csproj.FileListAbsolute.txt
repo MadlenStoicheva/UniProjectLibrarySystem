@@ -56,3 +56,22 @@ C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.cs
 C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csproj.CopyComplete
 C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.dll
 C:\builds\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySytem.DAL.dll.config
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySytem.DAL.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySytem.DAL.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\EntityFramework.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.BaseService.Domain.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.Common.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.RelationServices.Domain.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.Common.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.RelationServices.Domain.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\EntityFramework.xml
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csprojResolveAssemblyReference.cache
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.Migrations.automatic.resources
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csproj.GenerateResource.Cache
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csproj.CoreCompileInputs.cache
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.pdb

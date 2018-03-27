@@ -10,3 +10,9 @@ C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\Lib
 C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csproj.CoreCompileInputs.cache
 C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.dll
 C:\builds\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\bin\Debug\LibrarySystem.BaseService.Domain.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csprojResolveAssemblyReference.cache
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.csproj.CoreCompileInputs.cache
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.BaseService.Domain\obj\Debug\LibrarySystem.BaseService.Domain.pdb

@@ -15,3 +15,11 @@ C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.C
 C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.csproj.CopyComplete
 C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.dll
 C:\builds\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.Common\bin\Debug\LibrarySystem.Common.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.Common\bin\Debug\LibrarySystem.Common.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.Common\bin\Debug\LibrarySystem.BaseService.Domain.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.Common\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.csprojResolveAssemblyReference.cache
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.csproj.CoreCompileInputs.cache
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.Common\obj\Debug\LibrarySystem.Common.pdb
