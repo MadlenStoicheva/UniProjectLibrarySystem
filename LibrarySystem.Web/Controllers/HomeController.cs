@@ -66,7 +66,7 @@ namespace LibrarySystem.Web.Controllers
         [HttpPost]
         public ActionResult IndexPage(EmailSendingViewModel emailSendingViewModel)
         {
-            EmailSender emailSender = new EmailSender();
+            //EmailSender emailSender = new EmailSender();
 
             if (emailSendingViewModel.Comment == null || emailSendingViewModel.Name == null || emailSendingViewModel.Email == null)
             {
@@ -75,7 +75,7 @@ namespace LibrarySystem.Web.Controllers
             }
             else
             {
-                emailSender.SendMail(emailSendingViewModel.Email, emailSendingViewModel.Name, emailSendingViewModel.Comment);
+                EmailSender.SendEmailAsync(emailSendingViewModel.Email, emailSendingViewModel.Name, emailSendingViewModel.Comment);
                 TempData["Email"] = "You have send the email successfully!";
                 return View("Contact");
             }
