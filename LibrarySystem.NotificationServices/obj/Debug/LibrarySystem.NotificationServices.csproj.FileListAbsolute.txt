@@ -32,3 +32,7 @@ D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProj
 D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.csproj.CoreCompileInputs.cache
 D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.dll
 D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.BaseService.Domain.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.RelationServices.Domain.dll
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.RelationServices.Domain.pdb

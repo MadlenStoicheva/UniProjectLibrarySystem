@@ -55,8 +55,8 @@ namespace LibrarySystemProject.Controllers
             model.firstName = user.FirstName;
             model.lastName = user.LastName;
             model.isAdmin = user.IsAdmin;
-            model.IsEmailConfirmed = user.IsEmailConfirmed;
-            model.ValidationCode = user.ValidationCode;
+            //model.IsEmailConfirmed = user.IsEmailConfirmed;
+           // model.ValidationCode = user.ValidationCode;
 
             return View(model);
         }
@@ -66,20 +66,22 @@ namespace LibrarySystemProject.Controllers
         {
             UserRepository repository = new UserRepository();
 
-            User user = new User
-            {
-                Id = model.Id,
-                ImgURL = model.imgURL,
-                Email = model.Email,
-                Username = model.username,
-                Password = model.password,
-                FirstName = model.firstName,
-                LastName = model.lastName,
-                IsAdmin = model.isAdmin,
-                IsEmailConfirmed = model.IsEmailConfirmed,
-                ValidationCode = model.ValidationCode
-                
-            };
+            //User testUser = repository.GetById(model.Id);
+
+            User user = repository.GetById(model.Id);
+
+
+            user.Id = model.Id;
+                user.ImgURL = model.imgURL;
+                user.Email = model.Email;
+                user.Username = model.username;
+                user.Password = model.password;
+                user.FirstName = model.firstName;
+                user.LastName = model.lastName;
+            user.IsAdmin = model.isAdmin;
+                //IsEmailConfirmed = testUser.IsEmailConfirmed,
+                //ValidationCode = testUser.ValidationCode
+            
 
             repository.Save(user);
 
@@ -126,6 +128,10 @@ namespace LibrarySystemProject.Controllers
         [HttpPost]
         public ActionResult Create(UserCreateViewModel model)
         {
+            string validationCode = HashUtils.CreateReferralCode();
+
+            SendConfirmEmail emailSender = new SendConfirmEmail();
+
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -145,6 +151,8 @@ namespace LibrarySystemProject.Controllers
 
             var repository = new UserRepository();
             repository.Insert(user);
+
+            sendConfirmEmail.SendConfirmationEmailAsync(user);
 
             return RedirectToAction("Index");
         }
@@ -170,8 +178,8 @@ namespace LibrarySystemProject.Controllers
                 model.firstName = user.FirstName;
                 model.lastName = user.LastName;
                 model.isAdmin = user.IsAdmin;
-                model.IsEmailConfirmed = user.IsEmailConfirmed;
-                model.ValidationCode = user.ValidationCode;
+                //model.IsEmailConfirmed = user.IsEmailConfirmed;
+                //model.ValidationCode = user.ValidationCode;
 
             }
 
@@ -189,7 +197,7 @@ namespace LibrarySystemProject.Controllers
 
             UserRepository repository = new UserRepository();
 
-            User user = new User();
+            User user = repository.GetById(model.Id);
             user.Id = model.Id;
             user.ImgURL = model.imgURL;
             user.Email = model.Email;
@@ -198,8 +206,8 @@ namespace LibrarySystemProject.Controllers
             user.FirstName = model.firstName;
             user.LastName = model.lastName;
             user.IsAdmin = model.isAdmin;
-            user.IsEmailConfirmed = model.IsEmailConfirmed;
-            user.ValidationCode = model.ValidationCode;
+            //user.IsEmailConfirmed = model.IsEmailConfirmed;
+            //user.ValidationCode = model.ValidationCode;
 
             repository.Save(user);
 
@@ -223,8 +231,8 @@ namespace LibrarySystemProject.Controllers
             model.firstName = user.FirstName;
             model.lastName = user.LastName;
             model.Email = user.Email;
-            model.isAdmin = user.IsAdmin;
-            model.IsEmailConfirmed = user.IsEmailConfirmed;
+            //model.isAdmin = user.IsAdmin;
+            //model.IsEmailConfirmed = user.IsEmailConfirmed;
 
 
             return View(model);

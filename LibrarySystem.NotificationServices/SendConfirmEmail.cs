@@ -12,8 +12,8 @@ namespace LibrarySystem.NotificationServices
     public class SendConfirmEmail
     {
         
-        //private string confirmationEmailUrl = "http://localhost:60585/Users/ValidateEmail";
-        private string confirmationEmailUrl = "http://newlibraryproject.apphb.com/Users/ValidateEmail";
+        private string confirmationEmailUrl = "http://localhost:60585/Users/ValidateEmail";
+        //private string confirmationEmailUrl = "http://newlibraryproject.apphb.com/Users/ValidateEmail";
 
         public void SendConfirmationEmailAsync(User user)
         {
