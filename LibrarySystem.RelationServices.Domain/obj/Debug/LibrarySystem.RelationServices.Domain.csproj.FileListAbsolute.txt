@@ -31,3 +31,11 @@ D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.RelationService
 D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csproj.CoreCompileInputs.cache
 D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.dll
 D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.pdb
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.RelationServices.Domain.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.RelationServices.Domain.pdb
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.BaseService.Domain.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csprojResolveAssemblyReference.cache
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.csproj.CoreCompileInputs.cache
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySystem.RelationServices.Domain\obj\Debug\LibrarySystem.RelationServices.Domain.pdb

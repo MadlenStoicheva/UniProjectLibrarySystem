@@ -13,7 +13,7 @@ namespace LibrarySytem.DAL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201803241703008_automatic"; }
+            get { return "201803281611387_automatic"; }
         }
         
         string IMigrationMetadata.Source

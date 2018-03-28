@@ -75,3 +75,22 @@ D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\Li
 D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csproj.CoreCompileInputs.cache
 D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.dll
 D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.pdb
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySytem.DAL.dll.config
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySytem.DAL.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySytem.DAL.pdb
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\EntityFramework.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.BaseService.Domain.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.Common.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.RelationServices.Domain.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.Common.pdb
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\LibrarySystem.RelationServices.Domain.pdb
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\EntityFramework.xml
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csprojResolveAssemblyReference.cache
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csproj.CoreCompileInputs.cache
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.dll
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.pdb
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.Migrations.automatic.resources
+D:\MadlenProject\po-nova versiq\opit za neshto\variant\variant za neshto\UniProjectLibrarySystem\LibrarySytem.DAL\obj\Debug\LibrarySytem.DAL.csproj.GenerateResource.Cache

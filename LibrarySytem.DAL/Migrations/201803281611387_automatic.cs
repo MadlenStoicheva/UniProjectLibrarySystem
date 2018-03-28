@@ -51,6 +51,8 @@ namespace LibrarySytem.DAL.Migrations
                         LastName = c.String(),
                         Email = c.String(),
                         IsAdmin = c.Boolean(nullable: false),
+                        IsEmailConfirmed = c.Boolean(nullable: false),
+                        ValidationCode = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             

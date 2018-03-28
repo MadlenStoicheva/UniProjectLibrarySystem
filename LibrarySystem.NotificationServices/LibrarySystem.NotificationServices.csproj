@@ -44,5 +44,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SendConfirmEmail.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibrarySystem.BaseService.Domain\LibrarySystem.BaseService.Domain.csproj">
+      <Project>{3b7a9faa-8b8e-4fec-ac01-c14927a74512}</Project>
+      <Name>LibrarySystem.BaseService.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibrarySystem.RelationServices.Domain\LibrarySystem.RelationServices.Domain.csproj">
+      <Project>{73C9AD44-2620-4B1D-9DCB-B4C3FDB3E461}</Project>
+      <Name>LibrarySystem.RelationServices.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -229,6 +229,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Home\IndexPage.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Users\ValidateEmail.cshtml" />
+    <Content Include="Views\Users\ConfirmEmail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -251,6 +253,10 @@
     <ProjectReference Include="..\LibrarySystem.BaseService.Domain\LibrarySystem.BaseService.Domain.csproj">
       <Project>{3B7A9FAA-8B8E-4FEC-AC01-C14927A74512}</Project>
       <Name>LibrarySystem.BaseService.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibrarySystem.Common\LibrarySystem.Common.csproj">
+      <Project>{34D11380-0509-4399-B236-515D8CA2654B}</Project>
+      <Name>LibrarySystem.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\LibrarySystem.NotificationServices\LibrarySystem.NotificationServices.csproj">
       <Project>{ba214209-7698-4b28-881f-51cb56d7fc13}</Project>

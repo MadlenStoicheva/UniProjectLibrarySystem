@@ -34,5 +34,8 @@ namespace LibrarySystemProject.Models.UserViewModel
         public string Email { get; set; }
 
         public bool isAdmin { get; set; }
+
+        public bool IsEmailConfirmed { get; set; }
+        public string ValidationCode { get; set; }
     }
 }

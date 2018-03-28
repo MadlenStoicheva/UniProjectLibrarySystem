@@ -12,12 +12,14 @@ using LibrarySystem.DAL.Repositories.UserRepository;
 using LibrarySystem.RelationServices.Domain.User;
 using LibrarySystem.Web.Authentication;
 using LibrarySystem.NotificationServices;
+using System.Threading.Tasks;
+using LibrarySystem.Common.Helper;
 
 namespace LibrarySystemProject.Controllers
 {
     public class UsersController : Controller
     {
-
+        private SendConfirmEmail sendConfirmEmail = new SendConfirmEmail();
 
         [LibrarySystem.Web.ActionFilters.AuthenticationFilter(RequireAdminRole = true)]
         public ActionResult Index()
@@ -53,7 +55,8 @@ namespace LibrarySystemProject.Controllers
             model.firstName = user.FirstName;
             model.lastName = user.LastName;
             model.isAdmin = user.IsAdmin;
-
+            model.IsEmailConfirmed = user.IsEmailConfirmed;
+            model.ValidationCode = user.ValidationCode;
 
             return View(model);
         }
@@ -72,22 +75,13 @@ namespace LibrarySystemProject.Controllers
                 Password = model.password,
                 FirstName = model.firstName,
                 LastName = model.lastName,
-                IsAdmin = model.isAdmin
+                IsAdmin = model.isAdmin,
+                IsEmailConfirmed = model.IsEmailConfirmed,
+                ValidationCode = model.ValidationCode
+                
             };
 
             repository.Save(user);
-
-            //id =  LoginFilter.LoginUser.GetUserId();
-            //UserRepository repository = new UserRepository();
-            //UserEditViewModel model = new UserEditViewModel();
-            //User user = repository.GetById(id);
-
-            //model.username = user.username;
-            //model.password = user.password;
-            //model.firstName = user.firstName;
-            //model.lastName = user.lastName;
-            //model.Id = LoginFilter.LoginUser.GetUserId();
-
 
             return RedirectToAction("IndexPage", "Home");
         }
@@ -98,8 +92,11 @@ namespace LibrarySystemProject.Controllers
         }
 
         [HttpPost]
-        public ActionResult Register(UserCreateViewModel model)
+        public async Task <ActionResult> Register(UserCreateViewModel model)
         {
+            string validationCode = HashUtils.CreateReferralCode();
+            
+
             SendConfirmEmail emailSender = new SendConfirmEmail();
 
             if (!ModelState.IsValid)
@@ -115,14 +112,14 @@ namespace LibrarySystemProject.Controllers
             user.LastName = model.lastName;
             user.Email = model.Email;
             user.IsAdmin = model.isAdmin;
+            user.IsEmailConfirmed = false;
+            user.ValidationCode = validationCode;
 
             var repository = new UserRepository();
             repository.Insert(user);
 
-            //return RedirectToAction("Index");
-            // return RedirectToAction("Home/IndexPage");
-            EmailSender sender = new EmailSender();
-            sender.SendEmail(model.Email, "Ho-ho-ho", "Merry Christmas!!!");
+            sendConfirmEmail.SendConfirmationEmailAsync(user);
+           
             return RedirectToAction("IndexPage", "Home");
         }
 
@@ -143,6 +140,8 @@ namespace LibrarySystemProject.Controllers
             user.LastName = model.lastName;
             user.Email = model.Email;
             user.IsAdmin = model.isAdmin;
+            user.IsEmailConfirmed = model.IsEmailConfirmed;
+            user.ValidationCode = model.ValidationCode;
 
             var repository = new UserRepository();
             repository.Insert(user);
@@ -171,6 +170,8 @@ namespace LibrarySystemProject.Controllers
                 model.firstName = user.FirstName;
                 model.lastName = user.LastName;
                 model.isAdmin = user.IsAdmin;
+                model.IsEmailConfirmed = user.IsEmailConfirmed;
+                model.ValidationCode = user.ValidationCode;
 
             }
 
@@ -197,6 +198,8 @@ namespace LibrarySystemProject.Controllers
             user.FirstName = model.firstName;
             user.LastName = model.lastName;
             user.IsAdmin = model.isAdmin;
+            user.IsEmailConfirmed = model.IsEmailConfirmed;
+            user.ValidationCode = model.ValidationCode;
 
             repository.Save(user);
 
@@ -221,6 +224,8 @@ namespace LibrarySystemProject.Controllers
             model.lastName = user.LastName;
             model.Email = user.Email;
             model.isAdmin = user.IsAdmin;
+            model.IsEmailConfirmed = user.IsEmailConfirmed;
+
 
             return View(model);
         }
@@ -239,5 +244,34 @@ namespace LibrarySystemProject.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        public ActionResult ValidateEmail(string userId, string validationCode)
+        {
+            if (userId == null || validationCode == null)
+            {
+                return RedirectToAction("IndexPage", "Home");
+            }
+
+                UserRepository repository = new UserRepository();
+
+                User user = repository.GetById(Int32.Parse(userId));
+                if (user == null || validationCode != user.ValidationCode)
+                {
+                    return RedirectToAction("IndexPage", "Home");
+                }
+             
+                user.Id = Int32.Parse(userId);
+                user.ValidationCode = validationCode;
+                user.IsEmailConfirmed = true;
+
+                 repository.Update(user);
+   
+                 return View("ConfirmEmail");
+        }
+        public ActionResult ConfirmEmail()
+        {
+            return View();
+        }
     }
 }
