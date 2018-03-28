@@ -36,3 +36,8 @@ D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationSer
 D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.RelationServices.Domain.dll
 D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.BaseService.Domain.pdb
 D:\Нова папка (4)\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.RelationServices.Domain.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.BaseService.Domain.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.RelationServices.Domain.dll
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.BaseService.Domain.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\bin\Debug\LibrarySystem.RelationServices.Domain.pdb
+C:\builds\UniProjectLibrarySystem\LibrarySystem.NotificationServices\obj\Debug\LibrarySystem.NotificationServices.csproj.CopyComplete

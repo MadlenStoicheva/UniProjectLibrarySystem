@@ -10,6 +10,8 @@ namespace LibrarySystem.NotificationServices
 {
     public class EmailSender
     {
+        private string _adminEmail = "exceptionhelper@gmail.com";
+        private string _adminPass = "b@40neHk@";
         public void SendEmail(string email, string name, string comment)
         {
             try
@@ -17,17 +19,17 @@ namespace LibrarySystem.NotificationServices
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587)
                 {
                     UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential("madlen.stoicheva@gmail.com", "skullhong9723")
+                    Credentials = new NetworkCredential(_adminEmail, _adminPass)
                 };
 
                 MailMessage mailMessage = new MailMessage
                 {
-                    From = new MailAddress("madlen.stoicheva@gmail.com")
+                    From = new MailAddress(email)
                 };
-                mailMessage.To.Add(email);
-                mailMessage.Body = comment;
+                mailMessage.To.Add(_adminEmail);
+                mailMessage.Body = $"{ name} with email { email} send you the next comment: { comment}";
                 mailMessage.IsBodyHtml = true;
-                mailMessage.Subject = name;
+                mailMessage.Subject = "Email request from landing page....";
                 client.EnableSsl = true;
                 client.Send(mailMessage);
             }
@@ -56,7 +58,7 @@ namespace LibrarySystem.NotificationServices
         //    Client.Send(email, "infinite.love@abv.bg", name, comment);
         //}
 
-      
+
 
     }
 }
