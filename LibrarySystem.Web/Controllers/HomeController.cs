@@ -42,15 +42,8 @@ namespace LibrarySystem.Web.Controllers
         public ActionResult Login(LoginViewModel model)
         {
             UserRepository repo = new UserRepository();
-            List<User> items = repo.GetAll(i => i.Username == model.Username && i.Password == model.Password && i.IsEmailConfirmed==model.IsEmailConfirmed);
+            List<User> items = repo.GetAll(i => i.Username == model.Username && i.Password == model.Password);
 
-            if (!model.IsEmailConfirmed)
-            {
-                ViewData["WrongLogin"] = "Email is not confirmed!";
-                return View("NotConfirmedEmail");
-            }
-            else
-            {
                 Session["LoggedUser"] = items.Count > 0 ? items[0] : null;
 
                 Session["UserName"] = model.Username;
@@ -61,7 +54,6 @@ namespace LibrarySystem.Web.Controllers
                 if (!ModelState.IsValid)
                     return View(model);
 
-            }
             return RedirectToAction("IndexPage", "Home");
         }
 
