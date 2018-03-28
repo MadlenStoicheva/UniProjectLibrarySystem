@@ -27,6 +27,12 @@ namespace LibrarySystem.Web.Controllers
         }
 
         [HttpGet]
+        public ActionResult NotConfirmedEmail()
+        {
+            return View();
+        }
+
+        [HttpGet]
         public ActionResult Login()
         {
             return View();
@@ -36,18 +42,26 @@ namespace LibrarySystem.Web.Controllers
         public ActionResult Login(LoginViewModel model)
         {
             UserRepository repo = new UserRepository();
-            List<User> items = repo.GetAll(i => i.Username == model.Username && i.Password == model.Password);
-            Session["LoggedUser"] = items.Count > 0 ? items[0] : null;
+            List<User> items = repo.GetAll(i => i.Username == model.Username && i.Password == model.Password && i.IsEmailConfirmed==model.IsEmailConfirmed);
 
-            Session["UserName"] = model.Username;
+            if (!model.IsEmailConfirmed)
+            {
+                ViewData["WrongLogin"] = "Email is not confirmed!";
+                return View("NotConfirmedEmail");
+            }
+            else
+            {
+                Session["LoggedUser"] = items.Count > 0 ? items[0] : null;
 
-            if (items.Count <= 0)
-                this.ModelState.AddModelError("failedLogin", "Login failed!");
+                Session["UserName"] = model.Username;
 
-            if (!ModelState.IsValid)
-                return View(model);
-           
+                if (items.Count <= 0)
+                    this.ModelState.AddModelError("failedLogin", "Login failed!");
 
+                if (!ModelState.IsValid)
+                    return View(model);
+
+            }
             return RedirectToAction("IndexPage", "Home");
         }
 

@@ -88,6 +88,11 @@ namespace LibrarySystemProject.Controllers
             return RedirectToAction("IndexPage", "Home");
         }
 
+        public ActionResult Error()
+        {
+            return View();
+        }
+
         public ActionResult Register()
         {
             return View();
@@ -97,7 +102,8 @@ namespace LibrarySystemProject.Controllers
         public async Task <ActionResult> Register(UserCreateViewModel model)
         {
             string validationCode = HashUtils.CreateReferralCode();
-            
+            var repository = new UserRepository();
+            List<User> users = repository.GetAll();
 
             SendConfirmEmail emailSender = new SendConfirmEmail();
 
@@ -105,23 +111,29 @@ namespace LibrarySystemProject.Controllers
             {
                 return View(model);
             }
+            if (users.Where(u => u.Email == model.Email).Any())
+            {
+                ViewBag.error = TempData["This email is already taken!"];
+                return View("Error");
+            }
+            else
+            {
+                User user = new User();
+                user.ImgURL = model.imgURL;
+                user.Username = model.username;
+                user.Password = model.password;
+                user.FirstName = model.firstName;
+                user.LastName = model.lastName;
+                user.Email = model.Email;
+                user.IsAdmin = model.isAdmin;
+                user.IsEmailConfirmed = false;
+                user.ValidationCode = validationCode;
 
-            User user = new User();
-            user.ImgURL = model.imgURL;
-            user.Username = model.username;
-            user.Password = model.password;
-            user.FirstName = model.firstName;
-            user.LastName = model.lastName;
-            user.Email = model.Email;
-            user.IsAdmin = model.isAdmin;
-            user.IsEmailConfirmed = false;
-            user.ValidationCode = validationCode;
+                repository.Insert(user);
 
-            var repository = new UserRepository();
-            repository.Insert(user);
+                sendConfirmEmail.SendConfirmationEmailAsync(user);
 
-            sendConfirmEmail.SendConfirmationEmailAsync(user);
-           
+            }
             return RedirectToAction("IndexPage", "Home");
         }
 
