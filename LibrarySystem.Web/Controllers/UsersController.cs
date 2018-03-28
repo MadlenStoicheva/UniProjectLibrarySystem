@@ -100,6 +100,8 @@ namespace LibrarySystemProject.Controllers
         [HttpPost]
         public ActionResult Register(UserCreateViewModel model)
         {
+            SendConfirmEmail emailSender = new SendConfirmEmail();
+
             if (!ModelState.IsValid)
             {
                 return View(model);

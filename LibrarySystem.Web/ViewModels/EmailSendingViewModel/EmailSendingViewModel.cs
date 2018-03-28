@@ -10,6 +10,7 @@ namespace LibrarySystem.Web.ViewModels.EmailSendingViewModel
     {
         [Required(ErrorMessage = "Field can't be empty")]
         [DataType(DataType.EmailAddress, ErrorMessage = "E-mail is not valid")]
+        [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*@gmail.com$",  ErrorMessage = "Email Format is wrong")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Field can't be empty")]
         public string Name { get; set; }

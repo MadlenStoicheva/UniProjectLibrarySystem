@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 
 namespace LibrarySystem.NotificationServices
 {
-    public class EmailSender
+    public class SendConfirmEmail
     {
-        public void SendEmail(string email, string name, string comment)
+
+
+        public void SendConfirmationEmail(string email, string name, string comment)
         {
             try
             {
@@ -20,14 +22,21 @@ namespace LibrarySystem.NotificationServices
                     Credentials = new NetworkCredential("madlen.stoicheva@gmail.com", "skullhong9723")
                 };
 
+                StringBuilder message = new StringBuilder();
+                MailAddress from = new MailAddress(email.ToString());
+                message.Append("Name: " + name + "\n");
+                message.Append("Email: " + email + "\n");
+                message.Append("Telephone: " + comment + "\n\n");
+                message.Append(message);
+
                 MailMessage mailMessage = new MailMessage
                 {
-                    From = new MailAddress("madlen.stoicheva@gmail.com")
+                    From = from
                 };
-                mailMessage.To.Add(email);
-                mailMessage.Body = comment;
+                mailMessage.To.Add("madlen.stoicheva@gmail.com");
+                mailMessage.Body = message.ToString();
                 mailMessage.IsBodyHtml = true;
-                mailMessage.Subject = name;
+                mailMessage.Subject = "Test enquiry from " + name;
                 client.EnableSsl = true;
                 client.Send(mailMessage);
             }
@@ -37,26 +46,5 @@ namespace LibrarySystem.NotificationServices
                 throw new ApplicationException($"Unable to load : '{ex.Message}'.");
             }
         }
-
-
-        //public SmtpClient Client { get; set; }
-
-        //Send email using mailtrap.io
-        //public EmailSender()
-        //{
-        //    Client = new SmtpClient("smtp.mailtrap.io", 2525)
-        //    {
-        //        Credentials = new NetworkCredential("d4ce53a0171ba3", "4edf8f094c2e45"),
-        //        EnableSsl = true
-        //    };
-        //}
-
-        //public void SendMail(string email, string name, string comment)
-        //{
-        //    Client.Send(email, "infinite.love@abv.bg", name, comment);
-        //}
-
-      
-
     }
 }
