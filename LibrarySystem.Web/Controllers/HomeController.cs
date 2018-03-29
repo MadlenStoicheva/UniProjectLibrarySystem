@@ -44,17 +44,29 @@ namespace LibrarySystem.Web.Controllers
             UserRepository repo = new UserRepository();
             List<User> items = repo.GetAll(i => i.Username == model.Username && i.Password == model.Password);
 
-                Session["LoggedUser"] = items.Count > 0 ? items[0] : null;
+            Session["LoggedUser"] = items.Count > 0 ? items[0] : null;
 
-                Session["UserName"] = model.Username;
+            Session["UserName"] = model.Username;
 
-                if (items.Count <= 0)
-                    this.ModelState.AddModelError("failedLogin", "Login failed!");
+            User user = LibrarySystem.Web.Authentication.UserLogin.GetUserConfirm();
 
-                if (!ModelState.IsValid)
-                    return View(model);
+            if (items.Count <= 0)
+               this.ModelState.AddModelError("failedLogin", "Login failed!");
 
-            return RedirectToAction("IndexPage", "Home");
+            if (!ModelState.IsValid)
+                return View(model);
+
+            if (user.IsEmailConfirmed == false)
+            {
+                ViewData["WrongLogin"] = "Email is not confirmed!";
+                Logout();
+                return View("NotConfirmedEmail");
+            }
+            else
+            {
+
+                return RedirectToAction("IndexPage", "Home");
+            }
         }
 
         public ActionResult Logout()

@@ -59,5 +59,12 @@ namespace LibrarySystem.Web.Authentication
             return user;
         }
 
+        public static User GetUserConfirm()
+        {
+            User user = (User)HttpContext.Current.Session["LoggedUser"];
+
+            return user;
+        }
+
     }
 }
