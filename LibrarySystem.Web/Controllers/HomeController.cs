@@ -48,15 +48,16 @@ namespace LibrarySystem.Web.Controllers
 
             Session["UserName"] = model.Username;
 
-            User user = LibrarySystem.Web.Authentication.UserLogin.GetUserConfirm();
-            var repository = new UserRepository();
-            User users = repository.GetById(user.Id);
 
             if (items.Count <= 0)
                this.ModelState.AddModelError("failedLogin", "Login failed!");
 
             if (!ModelState.IsValid)
                 return View(model);
+
+            User user = LibrarySystem.Web.Authentication.UserLogin.GetUserConfirm();
+            var repository = new UserRepository();
+            User users = repository.GetById(user.Id);
 
             if (users.IsEmailConfirmed== false)
             {
