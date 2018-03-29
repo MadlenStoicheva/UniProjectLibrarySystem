@@ -49,6 +49,8 @@ namespace LibrarySystem.Web.Controllers
             Session["UserName"] = model.Username;
 
             User user = LibrarySystem.Web.Authentication.UserLogin.GetUserConfirm();
+            var repository = new UserRepository();
+            User users = repository.GetById(user.Id);
 
             if (items.Count <= 0)
                this.ModelState.AddModelError("failedLogin", "Login failed!");
@@ -56,7 +58,7 @@ namespace LibrarySystem.Web.Controllers
             if (!ModelState.IsValid)
                 return View(model);
 
-            if (user.IsEmailConfirmed == false)
+            if (users.IsEmailConfirmed== false)
             {
                 ViewData["WrongLogin"] = "Email is not confirmed!";
                 Logout();
@@ -89,8 +91,8 @@ namespace LibrarySystem.Web.Controllers
 
             if (emailSendingViewModel.Comment == null || emailSendingViewModel.Name == null || emailSendingViewModel.Email == null)
             {
-                TempData["Email"] = "You have to enter all the needed information for sending an email!";
-                return View("IndexPage");
+                ModelState.AddModelError("error_contact", "  You have to enter all the needed information for sending an email!");
+                return View();
             }
             else
             {

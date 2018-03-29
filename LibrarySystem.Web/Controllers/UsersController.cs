@@ -113,8 +113,16 @@ namespace LibrarySystemProject.Controllers
             }
             if (users.Where(u => u.Email == model.Email).Any())
             {
-                ViewBag.error = TempData["This email is already taken!"];
-                return View("Error");
+                ModelState.AddModelError("error_email","This email is already taken!");
+                return View();
+                //return View("Error");
+            }
+            else if (users.Where(u => u.Username == model.username).Any())
+            {
+               
+                ModelState.AddModelError("error_msg","This username is already taken!");
+                return View();
+               // return View("Error");
             }
             else
             {
@@ -141,7 +149,7 @@ namespace LibrarySystemProject.Controllers
         public ActionResult Create(UserCreateViewModel model)
         {
             string validationCode = HashUtils.CreateReferralCode();
-
+            var repository = new UserRepository();
             SendConfirmEmail emailSender = new SendConfirmEmail();
 
             if (!ModelState.IsValid)
@@ -158,10 +166,9 @@ namespace LibrarySystemProject.Controllers
             user.LastName = model.lastName;
             user.Email = model.Email;
             user.IsAdmin = model.isAdmin;
-            user.IsEmailConfirmed = model.IsEmailConfirmed;
-            user.ValidationCode = model.ValidationCode;
+            user.IsEmailConfirmed = false;
+            user.ValidationCode = validationCode;
 
-            var repository = new UserRepository();
             repository.Insert(user);
 
             sendConfirmEmail.SendConfirmationEmailAsync(user);
