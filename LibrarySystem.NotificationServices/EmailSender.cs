@@ -10,8 +10,8 @@ namespace LibrarySystem.NotificationServices
 {
     public class EmailSender
     {
-        private string _adminEmail = "madlen.stoicheva@gmail.com";
-        private string _adminPass = "skullhong9723";
+        private string _adminEmail = "madlen.stoycheva23@gmail.com";
+        private string _adminPass = "skullhong23";
         public void SendEmail(string email, string name, string comment)
         {
             try

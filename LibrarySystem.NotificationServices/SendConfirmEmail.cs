@@ -30,12 +30,12 @@ namespace LibrarySystem.NotificationServices
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587)
                 {
                     UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential("madlen.stoicheva@gmail.com", "skullhong9723")
+                    Credentials = new NetworkCredential("madlen.stoycheva23@gmail.com", "skullhong23")
                 };
 
                 MailMessage mailMessage = new MailMessage
                 {
-                    From = new MailAddress("madlen.stoicheva@gmail.com")
+                    From = new MailAddress("madlen.stoycheva23@gmail.com")
                 };
                 mailMessage.To.Add(email);
                 mailMessage.Body = comment;
